@@ -1,0 +1,194 @@
+Hero,Talent5,Talent10,Talent15,MainStyle1,MainStyle2,ExtraStyle,HeroShard,CritImportance,Power
+Alchemist,1,"1 (2 optional)","2 (1 optional)",Health,Dice,Survival,"No need","4 - not important, may need a manablast",4.5
+Alchemist,1,"1 (2 optional)","1 (2 optional)",Spirits,Dice,Survival,"No need","4 - not important, may need a manablast",4.5
+Alchemist,1,"1 (2 optional)","1 (2 optional)",Evade,Regen/Dice,Survival,"No need","3 - only manablast",4.5
+Alchemist,2,2,2,Ult,Dice,Survival,"No need","2 - important but not manablast",2
+Axe,2,1,1,Attack,Crit/Shield,Survival,"No need","2 - important but not manablast",3.5
+Axe,2,2,2,Health,Dice,Survival,"Situational","2 - important but not manablast",4
+Axe,2,2,2,Ult,Shield,Survival,"Situational","3 - only manablast",2
+Abaddon,1,2,2,Regen,Shield,Crit/Procs,"Good","1 - important, amd manablast too",3.5
+Abaddon,2,1,2,Ult,Shield/Evade,Regen,"Good","4 - not important, may need a manablast",4
+Anti-mage,1,"Depends on the enemies",2,Attack,Crit/Ult,Survival,"No need","4 - not important, may need a manablast",4
+Anti-mage,1,"Depends on the enemies",2,Ult,Attack,Survival,"No need","4 - not important, may need a manablast",4
+Ancient Apparition,1,1,1,Health,Frost,Dice,"Buy on late game","3 - only manablast",3
+Ancient Apparition,2,2,2,Ult,Survival,Frost,"Buy on late game","3 - only manablast",3
+Awakened,"2(1 fast lvl 5)",1,1,Attack,Crit,Survival,"No need","2 - important, but not manablast",3.5
+Awakened,"2(1 fast lvl 5)",2,1,Attack,Ult,Survival,"No need","2 - important, but not manablast",4.5
+Bristleback,1,1,1,Attack,Ult,Survival,"Buy on late game","2 - important, but not manablast",3
+Bristleback,2,2,2,Regen,Dice/Crit,Health,"Buy on late game","2 - important, but not manablast",4.5
+Bristleback,2,2,2,Ult,Regen/Crit,Survival,"Buy on late game","2 - important, but not manablast",3
+Brood Mother,1,1,1,Attack,Poison,Survival,"No need","Not important, manablast no need",3
+Brood Mother,2,1,2,Health,Poison/Dice,Survival,"Situational","Not important, manablast no need",3.5
+Brood Mother,2,1,2,Spirits,Poison/Dice,Survival,"Musthave","Not important, manablast no need",3.5
+Clinkz,2,2,1,Spirits,Ult/Crit,Survival,"Situational","2 - important, but not manablast",4.5
+Clinkz,2,2,"1(situational)",Spirits,Dice,Survival,"Situational","2 - important, but not manablast",3.5
+Chaos Knight,2,2,2,Crit,Regen/Procs,Dice,"Buy on late game","1 - important, and manablast too",4.5
+Chaos Knight,1,1,1,Attack,Crit,Survival,"Buy on late game","2 - important, but not manablast",4.5
+ASH SWORDMAIDEN,2,"1(2 situational)",2,Ult,Dice/Fury,Survival,"No need","3 - only manablast",3.5
+ASH SWORDMAIDEN,1,1,1,Attack,Fury,Survival,"Situational","3 - only manablast",3
+Crystal Maiden,1,1,"2(1 optional)",Ult,Frost,Survival/Crit,"Situational","3 - only manablast",3
+Crystal Maiden,1,2,1,Regen,Crit/Frost,Survival,"Good","1 - important, and manablast too",4
+Crystal Maiden,1,2,1,Attack,Dice/Frost,Survival,"Musthave","1 - important, and manablast too",3.5
+Dark Willow,1,1,1,Spirits,Dice,Survival,"Situational","3 - only manablast",3
+Dark Willow,2,2,1,Spirits,Ult,Survival,"Situational","3 - only manablast",3
+Dazzle,2,2,"1(situational 2)",Poison,Regen/Health,,"Good","6 - no need",3
+Dazzle,1,1,1,Spirits,Injure,Survival,"Good","6 - no need",3
+Dazzle,1,1,1,Health/Evade,Injure/Dice,Survival,"Good","6 - no need",4
+DOOM,"1(situational 2)",2,2,Health,Chaos,Survival/Dice,"Buy on late game","6 - no need",4
+DOOM,1,1,1,Ult,Health/Regen/Evade,Chaos,"Buy on late game","6 - no need",2
+Dragon Knight,1,1,2,Health,Poison,Crit/Survival,"Good","2 - important, but not manablast",3
+Dragon Knight,1,2,1,Fury,Frost,Health,"Musthave","1 - important, and manablast too",3
+Dragon Knight,1,2,2,Frost,Dice,Survival,"Good","1 - important, and manablast too",3
+Dragon Knight,2,2,2,Ult,Frost,Survival,"Good","4 - not important, may need a manablast",3.5
+Drow Ranger,2,2,2,Attack,Crit,Frost/Survival,"Situational","2 - important, but not manablast",3.5
+Drow Ranger,1,2,1,Ult,Dice,Crit/Survival,"Situational","2 - important, but not manablast",4
+Drow Ranger,1,1,1,Crit,Regen/Shield/Procs,Frost,"Situational","1 - important, and manablast too",3.5
+Earthshaker,2,Situational,Situational,Crit,Procs,Survival,"Buy on late game","1 - important, and manablast too",
+Earthshaker,1,1,1,Attack,Crit,Survival,"Buy on late game","2 - important, but not manablast",
+Earthshaker,1,2,2,Crit,Procs,Survival,"Buy on late game","1 - important, and manablast too",
+Ember Spirit,2,2,1,Crit,Procs,Fury/Survival,"Situational","1 - important, and manablast too",4
+Ember Spirit,1,1,1,Ult,Fury,Crit/Survival,"Good","1 - important, and manablast too",4
+Ember Spirit,2,2,2,Attack,Crit,Survival,"Situational","2 - important, but not manablast",4
+Enigma,2,2,2,Ult,Evade/Chaos,Survival,"Situational","6 - no need",
+Enigma,2,1,1,Chaos/Dice,Health,Survival,"Situational","6 - no need",
+Flameborn,2,1,2,Chaos,Health,Survival/Dice,"Good","6 - no need",3.5
+Flameborn,1,1,2,Chaos,Attack,Survival/Dice,"Good","6 - no need",4
+Void,1,"1(2 ult in pool)","1(2 ult in pool)",Attack,Dice,Survival,"No need","1 - important, and manablast too",3.5
+Void,1,2,2,Ult,Evade,Survival,"No need","3 - only manablast",2
+Grimstroke,1,1,1,Evade,Injure,Survival,"Situational","4 - not important, may need a manablast",3
+Grimstroke,2,2,"1(2situational)",Ult,Evade,Survival,"Situational","4 - not important, may need a manablast",3.5
+Hoodwink,2,2,2,Ult,Crit,Survival/Dice,"Situational","1 - important, and manablast too",3
+Hoodwink,1,1,1,Health,Dice/Injure/Poison,Survival/Dice,"Situational","2 - important, but not manablast",3.5
+Huskar,1,"2(situational 1)",1,Health/Evade,Fury,Dice,"No need","3 - only manablast",4
+Huskar,2,1,"2(situational 1)",Fury,Attack/Dice,Survival,"Buy on late game","3 - only manablast",3
+Juggernaut,1,1,"2(situational 1)",Attack,Crit,Shield/Survival,"Good","2 - important, but not manablast",3
+Juggernaut,1,1,1,Ult,Crit,Procs/Survival,"Good","1 - important, and manablast too",4
+Kez,2,2,2,Attack,Crit,Survival/Dice,"No need","2 - important, but not manablast",3.5
+Kez,2,2,1,Ult,Evade,Survival/Dice,"Musthave","2 - important, but not manablast",2.5
+Kez,1,1,2,Attack,Dice,Survival,"Situational",,
+Kunkka,1,1,"1(situational 2)",Health,Poison/Injure,Dice,"No need","1 - important, and manablast too",3.5
+Kunkka,"2(if ult in pool 1)",2,2,Health,Attack,Dice,"Good","2 - important, but not manablast",3.5
+Largo,1,"1(situational 2)",1,Regen,Evade,Dice,"Musthave","4 - not important, may need a manablast",4
+Largo,1,"1(situational 2)",1,Regen,Crit,Dice,"Musthave","1 - important, and manablast too",4
+Largo,1,"1(situational 2)",1,Regen,Dice,Dice,"Musthave","4 - not important, may need a manablast",3.5
+Legion Commander,Situational,2,"2(1 ult in pool)",Crit,"Shield/Procs",Survival,"Situational","1 - important, and manablast too",4
+Legion Commander,2,2,1,Ult,Shield,Crit,"Situational","2 - important, but not manablast",4
+Lich,1,1,1,Health,Frost,Dice,"Buy on late game","3 - only manablast",4
+Lich,1,1,1,Spirits,Frost,Survival/Crit/Dice,"Buy on late game","3 - only manablast",
+Lich,2,2,2,Ult,Frost,Survival,"Situational","3 - only manablast",
+LifeStealer,1,1,1,Attack,Regen,Dice,"Situational","2 - important, but not manablast",
+LifeStealer,2,2,"1(situational 2)",Ult,Regen/Evade,Survival,"Situational","3 - only manablast",
+Leshrac,2,2,2,Health,Dice,Survival/Dice,"Good","3 - only manablast",
+Leshrac,2,1,1,Ult,Survival,Dice,"Good","3 - only manablast",
+Lina,1,1,1,Health,Fury,Crit,"No need","3 - only manablast",3.5
+Lina,1,2,2,Ult,Survival,Fury,"No need","3 - only manablast",4
+Lina,1,"1(situational 2)",1,Evade,Fury,Dice,"No need","3 - only manablast",3.5
+Lion,1,1,"1(2 situational)",Ult,Dice,Survival/Dice,"No need","6 - no need",3.5
+Lion,2,2,2,Chaos,Health,Survival,"No need","6 - no need",4
+Lion,1,2,2,Attack,Dice,Survival,"Musthave","6 - no need",3
+Lone Druid,1,1,2,Spirits,Health/Dice,Survival/Dice,"No need","4 - not important, may need a manablast",4
+Lone Druid,2,1,1,Spirits,Ult,Survival/Dice,"No need",,2.5
+Luna,1,1,1,Attack,Dice,Survival,"Musthave","2 - important, but not manablast",
+Luna,2,2,2,Attack,Crit,Survival,"Situational","2 - important, but not manablast",
+Lycan,1,1,1,Spirits,Attack,Dice/Survival,"Good","1 - important, and manablast too",
+Lycan,"1(situational 2)",2,2,Spirits,Ult,Dice/Survival,"Situational","1 - important, and manablast too",
+Lycan,2,2,2,Attack,Ult,Dice/Survival,,,
+Chef,2,1,"1(2 atk in pool)",Health,Ult/Dice,Attack,"Good","2 - important, but not manablast",
+Chef,1,1,1,Health,Dice,Dice,"Good","3 - only manablast",4.5
+Marci,"1(2 optional)",1,1,Attack,Crit/Dice,Survival,"Good","2 - important, but not manablast",
+Marci,1,2,2,Attack,Ult,Survival,"Good","2 - important, but not manablast",
+Mirana,2,1,2,Spirits,Chaos/Injure/Poison/Dice,Survival,"Situational","4 - not important, may need a manablast",
+Mirana,2,2,1,Spirits,Ult,Survival/Dice,"Situational","1 - important, and manablast too",
+Mars,1,1,2,Shield,Dice/Survival,Attack,"Buy on late game","2 - important, but not manablast",
+Mars,1,2,1,Crit,Shield/Procs,Survival,"Buy on late game","2 - important, but not manablast",
+Monkey King,1,"1(2 optional)","2(1 optional)",Attack,Dice,Survival,"Situational","2 - important, but not manablast",4
+Monkey King,1,"1(2 optional)","2(1 optional)",Spirits,Attack/Poison,Survival/Dice,"Situational","2 - important, but not manablast",4.5
+Monkey King,1,1,1,Health,Dice,Survival/Dice,"Situational","1 - important, and manablast too",4
+Muerta,"2(1 situational)",1,1,Attack,Ult,Survival,"Situational","4 - not important, may need a manablast",
+Muerta,"2(1 situational)",1,1,Attack,Crit,Survival,"Situational","1 - important, and manablast too",
+Necrophos,1,1,Situational,Ult,Evade/Health,Survival/Dice,"Situational","4 - not important, may need a manablast",3
+Necrophos,2,2,2,Health/Regen,Poison/Injure,Dice,"Good","4 - not important, may need a manablast",2.5
+Nyx,1,1,1,Health,Injure,Dice,"Good","4 - not important, may need a manablast",4
+Nyx,2,2,2,Ult,Survival,Dice,"Buy on late game","3 - only manablast",3.5
+Nyx,1,1,1,Spirits,Injure,Dice,"Good","4 - not important, may need a manablast",3.5
+Ogre Magi,Situational,2,1,Ult,Crit,Survival,"No need","3 - only manablast",4.5
+Ogre Magi,Situational,2,1,Attack,Crit,Survival,"Musthave","1 - important, and manablast too",4.5
+Omniknight,Situational,1,2,Regen,Health,Dice,"Buy on late game","6 - no need",
+Omniknight,1,1,1,Ult,Regen,Dice,"Buy on late game","6 - no need",
+Omniknight,Situational,1,2,Regen,Crit/Procs,Dice,"Buy on late game","1 - important, and manablast too",
+Pangolier,2,2,2,Attack,Health/Dice,Survival,"Situational","2 - important, but not manablast",
+Pangolier,1,1,1,Ult,Attack,Survival/Dice,"Situational","2 - important, but not manablast",
+Phantom Assassin,"1(2 vs evade)",2,1,Attack,Crit,Survival,"Situational","2 - important, but not manablast",4.5
+Phantom Assassin,"1(2 vs evade)",2,2,Attack,Crit/Procs,Survival,"Situational","1 - important, and manablast too",4.5
+Phantom Lancer,2,1,1,Attack,Spirits,Survival/Dice,"Buy on late game","4 - not important, may need a manablast",
+Phantom Lancer,2,2,2,Attack,Poison/Chaos/Injure/Dice,Survival,"Buy on late game","4 - not important, may need a manablast",
+Primal Beast,"1(2 situational)",2,1,Health,Dice,Dice,"Musthave",,
+Primal Beast,1,1,1,Health,Ult,Dice,"Musthave",,
+Pudge,2,2,2,Health,Poison/Dice,Dice/Dice,"Situational","6 - no need",
+Pudge,1,2,2,Ult,Health,Survival,"Situational","6 - no need",3.5
+Pugna,Situational,2,2,Spirits,Regen,Chaos/Injure/Poison/Dice,"Situational","6 - no need",3
+Pugna,1,1,1,Ult,Regen,Survival,"No need","4 - not important, may need a manablast",0
+Queen Of Pain,2,2,2,Ult,Health,Poison/Regen,"No need","6 - no need",2.5
+Queen Of Pain,1,1,1,Health,Poison,Dice,"No need","6 - no need",3.5
+Queen Of Pain,1,1,1,Spirits,Poison,Dice/Survival,"No need","6 - no need",3
+Razor,1,2,1,Crit,Procs,Survival,"No need","1 - important, and manablast too",3.5
+Razor,1,2,1,Health,Crit/Injure/Dice,Survival,"No need","1 - important, and manablast too",
+Razor,"1(situational 2)",1,2,Ult,Crit/Dice,Survival,"No need","2 - important, but not manablast",4
+Riki,Situational,2,2,Evade,Health,Dice,"No need","4 - not important, may need a manablast",4.5
+Riki,2,2,2,Evade,Dice,Survival,"No need","4 - not important, may need a manablast",4.5
+Riki,1,1,1,Evade,Crit,Survival,"No need","1 - important, and manablast too",2.5
+Ringmaster,1,1,1,Poison,Health,Dice,"Good","4 - not important, may need a manablast",
+Ringmaster,2,2,1,Ult,Survival,Dice,"Good","4 - not important, may need a manablast",
+Silencer,1,1,1,Attack,Ult,Survival,"Buy on late game","4 - not important, may need a manablast",
+Silencer,2,2,1,Ult,Dice,Survival,"Buy on late game","4 - not important, may need a manablast",
+Shadow Fiend,2,2,2,Ult,Survival/Dice,Dice,"Situational","3 - only manablast",
+Shadow Fiend,1,1,1,Attack,Health/Crit/Dice,Survival,"Situational","1 - important, and manablast too",
+Skywrath Mage,2,2,2,Regen,Crit/Dice/Procs,Survival/Evade,"Good","3 - only manablast",
+Skywrath Mage,1,1,1,Ult,Regen,Survival/Evade,"Good","3 - only manablast",
+Sniper,1,1,1,Attack,Crit,Survival,"No need","2 - important, but not manablast",
+Sniper,1,"1(situational 2)",1,Health/Regen,Crit/Procs,Survival,"No need","1 - important, and manablast too",
+Sniper,2,2,2,Ult,Crit,Survival,"Situational","2 - important, but not manablast",
+Spectre,"2(buy a shard for 200)",1,1,Evade,Regen/Health/Injure,Dice,"Good","4 - not important, may need a manablast",4.5
+Spectre,"2(buy a shard for 200)",2,2,Evade,Ult,Crit/Dice/Procs,"Good","3 - only manablast",
+Templar Assassin,2,1,1,Attack,Crit/Shield,Survival,"Situational","2 - important, but not manablast",
+Templar Assassin,1,1,2,Shield,Crit/Procs,Survival,"Situational","1 - important, and manablast too",
+Templar Assassin,"1 (2 optional if hp in pool)",2,2,Evade,Shield,Survival,"Situational","2 - important, but not manablast",
+Templar Assassin,2,1,1,Attack,Ult,Survival/Crit,"Situational","2 - important, but not manablast",
+Terrorblade,1,2,1,Attack,Crit/Dice,Survival,"Musthave","2 - important, but not manablast",3
+Terrorblade,2,"1(situational 2)",2,Health,Attack/Dice,Survival,"Musthave","2 - important, but not manablast",2.5
+Timbersaw,1,1,1,Chaos,Health,Survival/Dice,"Situational","6 - no need",
+Timbersaw,1,1,1,Chaos,Regen,Survival/Dice,"Situational","6 - no need",
+Tinker,Situational,2,2,Health,Dice,Dice,"Situational","3 - only manablast",3
+Tinker,1,2,2,Regen,Evade,Dice,"Situational","3 - only manablast",3
+Tinker,1,1,1,Ult,Crit,Survival,"Situational","3 - only manablast",2.5
+Tinker,Situational,2,2,Spirits,Dice,Dice,"Situational","3 - only manablast",3
+Tiny,1,1,1,Attack,Health,Dice/Survival,"Situational","2 - important, but not manablast",3.5
+Tiny,2,2,2,Health,Crit/Dice,Survival,"Good","2 - important, but not manablast",4.5
+Troll Warlord,1,2,2,Health,Frost,Survival,"Good","3 - only manablast",4
+Troll Warlord,2,1,1,Attack,Fury,Survival,"Good","2 - important, but not manablast",3.5
+Treant Protector,2,2,2,Spirits,Ult,Survival,"Good","3 - only manablast",5
+Treant Protector,1,1,1,Spirits,Chaos/Injure/Poison/Dice,Survival,"Good","3 - only manablast",5
+Ursa,1,2,2,Attack,Health/Dice,Survival,"No need","Not important, manablast no need",5
+Ursa,1,2,2,Health,Dice,Dice,"No need","Not important, manablast no need",5
+Ursa,"1(situational  2)","1(situational 2)",1,Ult,Attack/Survival,,"Situational","Not important, manablast no need",3.5
+Kherpi,1,1,"1 (2 situational)",Regen,Health,Dice,"Situational","6 - no need",3.5
+Kherpi,1,1,"1 (2 situational)",Regen,Evade,Dice,"Situational","6 - no need",3.5
+Viper,1,1,1,Ult,Survival,Survival,"Situational","6 - no need",2.5
+Viper,2,2,2,Health,Poison,Dice,"Situational","6 - no need",4.5
+Void Spirit,1,1,"(buy a shard for 200)",Health,Injure,Shield/Dice,"Musthave","4 - not important, may need a manablast",4
+Void Spirit,1,1,"(buy a shard for 200)",Evade,Injure,Shield/Dice,"Musthave","4 - not important, may need a manablast",4
+Void Spirit,1,1,"(buy a shard for 200)",Spirits,Injure,Shield/Dice,"Musthave","4 - not important, may need a manablast",4
+Wasteland Guard,"2(1 if no ult in pool)",1,"2(situational 1)",Shield,Crit/Procs/Evade,Dice,"Good","2 - important, but not manablast",
+Wasteland Guard,"2(1 optional)","2(1 with crit)",1,Ult,Shield,Dice,"Good","2 - important, but not manablast",
+Windranger,2,2,2,Ult,Evade,Crit/Survival,"No need","3 - only manablast",4
+Windranger,1,1,1,Evade,Regen/Dice,Survival,"No need","3 - only manablast",2.5
+Windranger,1,1,2,Attack,Evade/Crit,Survival,"Musthave","2 - important, but not manablast",3.5
+Witch Doctor,1,1,1,Regen/Injure,Health,Evade,"Musthave","6 - no need",
+Witch Doctor,2,2,1,Spirits,Injure,Regen,"Musthave","6 - no need",
+YAMASHITA,1,1,1,Health,Fury,Survival,"Situational","2 - important, but not manablast",
+YAMASHITA,1,2,2,Ult,Fury,Survival,"Situational","2 - important, but not manablast",
+YAMASHITA,2,2,2,Attack,Fury,Survival,"Situational","2 - important, but not manablast",
+Zeus,1,1,1,Attack,Survival,Dice,"Buy on late game","3 - only manablast",
+Zeus,2,"1(situational 2)",2,Ult,Survival,Dice,"Buy on late game","3 - only manablast",
+Zombie Guitarist,1,1,2,Health,Dice/Poison/Injure,Survival/Dice,"Good","4 - not important, may need a manablast",
+Zombie Guitarist,1,1,Situational,Ult,Survival,Dice,"Good","4 - not important, may need a manablast",
