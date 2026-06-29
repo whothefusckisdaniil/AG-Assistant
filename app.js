@@ -169,7 +169,7 @@ Enigma,2,2,2,Ult,Magic,Survival,"Good to have","4 - Not important",4.9`;
                     btn.onclick = () => this.toggleStyle(style, btn);
                     
                     btn.innerHTML = `
-                        <img src="img/styles/${style}.png" alt="${style}" class="style-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                        <img src="styles/${style}.png" alt="${style}" class="style-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
                         <span class="style-fallback-text" style="display:none;">${style}</span>
                     `;
                     grid.appendChild(btn);
@@ -317,9 +317,9 @@ Enigma,2,2,2,Ult,Magic,Survival,"Good to have","4 - Not important",4.9`;
                     const card = document.createElement('div');
                     card.className = 'glass hero-card';
                     
-                    const heroImgSrc = `img/heroes/${res.heroData.Hero}.png`;
+                    const heroImgSrc = `heroes/${res.heroData.Hero}.png`;
                     const matchedIconsHtml = res.uniqueMatches.map(style => 
-                        `<img src="img/styles/${style}.png" alt="${style}" title="${style}" class="card-matched-icon" onerror="this.style.display='none';">`
+                        `<img src="styles/${style}.png" alt="${style}" title="${style}" class="card-matched-icon" onerror="this.style.display='none';">`
                     ).join('');
 
                     card.innerHTML = `
@@ -378,7 +378,7 @@ Enigma,2,2,2,Ult,Magic,Survival,"Good to have","4 - Not important",4.9`;
                 styles.forEach(style => {
                     html += `
                         <div class="modal-style-icon" title="${style}">
-                            <img src="img/styles/${style}.png" alt="${style}" onerror="this.style.display='none';">
+                            <img src="styles/${style}.png" alt="${style}" onerror="this.style.display='none';">
                             <span>${style}</span>
                         </div>
                     `;
@@ -393,7 +393,7 @@ Enigma,2,2,2,Ult,Magic,Survival,"Good to have","4 - Not important",4.9`;
 
                 const fallbackSrc = "data:image/svg+xml;charset=UTF-8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22100%22 height=%22100%22%3E%3Crect width=%22100%22 height=%22100%22 fill=%22%23333%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 fill=%22%23a0a0a0%22 text-anchor=%22middle%22 dominant-baseline=%22middle%22 font-size=%2240%22%3E?%3C/text%3E%3C/svg%3E";
                 
-                const imgSrc = `img/heroes/${hero.Hero}.png`;
+                const imgSrc = `heroes/${hero.Hero}.png`;
                 
                 // Аватарка
                 const imgElement = document.getElementById('panel-hero-img');
@@ -419,7 +419,7 @@ Enigma,2,2,2,Ult,Magic,Survival,"Good to have","4 - Not important",4.9`;
                 document.getElementById('panel-shard').textContent = hero.HeroShard || '-';
                 const shardImg = document.getElementById('panel-shard-img');
                 shardImg.style.display = 'block'; // Возвращаем дисплей на случай, если прошлая была сломана
-                shardImg.src = 'img/styles/Shard.png'; // Запускаем загрузку картинки Shard
+                shardImg.src = 'styles/Shard.png'; // Запускаем загрузку картинки Shard
                 
                 document.getElementById('panel-crit').textContent = hero.CritImportance || '-';
 
