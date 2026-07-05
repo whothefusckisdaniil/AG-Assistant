@@ -4,7 +4,7 @@ Alchemist,1,"1 (2 optional)","1 (2 optional)",Spirits,Dice,Survival,"No need","4
 Alchemist,1,"1 (2 optional)","1 (2 optional)",Evade,Regen/Dice,Survival,"No need","3 - only manablast",4.5
 Alchemist,2,2,2,Ult,Dice,Survival,"No need","2 - important but not manablast",2
 Axe,2,1,1,Attack,Crit/Shield,Survival,"No need","2 - important but not manablast",3.5
-Axe,2,2,2,Health,Dice,Survival,"Situational","2 - important but not manablast",4
+Axe,1,2,2,Shield,Regen/Health,Dice,"Situational","2 - important but not manablast",4.5
 Axe,2,2,2,Ult,Shield,Survival,"Situational","3 - only manablast",2
 Abaddon,1,2,2,Regen,Shield,Crit/Procs,"Good","1 - important, amd manablast too",3.5
 Abaddon,2,1,2,Ult,Shield/Evade,Regen,"Good","4 - not important, may need a manablast",4
@@ -55,6 +55,7 @@ Flameborn,2,1,2,Chaos,Health,Survival/Dice,"Good","6 - no need",3.5
 Flameborn,1,1,2,Chaos,Attack,Survival/Dice,"Good","6 - no need",4
 Void,1,"1(2 ult in pool)","1(2 ult in pool)",Attack,Dice,Survival,"No need","1 - important, and manablast too",3.5
 Void,1,2,2,Ult,Evade,Survival,"No need","3 - only manablast",2
+Void,1,2,1,Attack,Ult,Dice,"No need","1 - important, and manablast too",5
 Grimstroke,1,1,1,Evade,Injure,Survival,"Situational","4 - not important, may need a manablast",3
 Grimstroke,2,2,"1(2situational)",Ult,Evade,Survival,"Situational","4 - not important, may need a manablast",3.5
 Hoodwink,2,2,2,Ult,Crit,Survival/Dice,"Situational","1 - important, and manablast too",3
@@ -93,7 +94,7 @@ Luna,2,2,2,Attack,Crit,Survival,"Situational","2 - important, but not manablast"
 Lycan,1,1,1,Spirits,Attack,Dice/Survival,"Good","1 - important, and manablast too",
 Lycan,"1(situational 2)",2,2,Spirits,Ult,Dice/Survival,"Situational","1 - important, and manablast too",
 Lycan,2,2,2,Attack,Ult,Dice/Survival,,,
-Chef,2,1,"1(2 atk in pool)",Health,Ult/Dice,Attack,"Good","2 - important, but not manablast",
+Chef,2,1,"1(2 atk in pool)",Health,Dice,Dice,"Good","2 - important, but not manablast",4.5
 Chef,1,1,1,Health,Dice,Dice,"Good","3 - only manablast",4.5
 Marci,"1(2 optional)",1,1,Attack,Crit/Dice,Survival,"Good","2 - important, but not manablast",
 Marci,1,2,2,Attack,Ult,Survival,"Good","2 - important, but not manablast",
@@ -180,6 +181,7 @@ Void Spirit,1,1,"(buy a shard for 200)",Evade,Injure,Shield/Dice,"Musthave","4 -
 Void Spirit,1,1,"(buy a shard for 200)",Spirits,Injure,Shield/Dice,"Musthave","4 - not important, may need a manablast",4
 Wasteland Guard,"2(1 if no ult in pool)",1,"2(situational 1)",Shield,Crit/Procs/Evade,Dice,"Good","2 - important, but not manablast",
 Wasteland Guard,"2(1 optional)","2(1 with crit)",1,Ult,Shield,Dice,"Good","2 - important, but not manablast",
+Warlock,"situational","situational","situational",Health,Poison,Dice,"Situational","4 - not important, may need a manablast",4.5
 Windranger,2,2,2,Ult,Evade,Crit/Survival,"No need","3 - only manablast",4
 Windranger,1,1,1,Evade,Regen/Dice,Survival,"No need","3 - only manablast",2.5
 Windranger,1,1,2,Attack,Evade/Crit,Survival,"Musthave","2 - important, but not manablast",3.5
