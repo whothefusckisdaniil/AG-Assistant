@@ -96,7 +96,7 @@ Lycan,"1(situational 2)",2,2,Spirits,Ult,Dice/Survival,"Situational","1 - import
 Lycan,2,2,2,Attack,Ult,Dice/Survival,,,
 Chef,2,1,"1(2 atk in pool)",Health,Dice,Dice,"Good","2 - important, but not manablast",4.5
 Chef,1,1,1,Health,Dice,Dice,"Good","3 - only manablast",4.5
-Marci,"1(2 optional)",1,1,Attack,Crit/Dice,Survival,"Good","2 - important, but not manablast",
+Marci,"1(2 optional)",1,1,Attack,Health,Dice,"Good","2 - important, but not manablast",4.5
 Marci,1,2,2,Attack,Ult,Survival,"Good","2 - important, but not manablast",
 Mirana,2,1,2,Spirits,Chaos/Injure/Poison/Dice,Survival,"Situational","4 - not important, may need a manablast",
 Mirana,2,2,1,Spirits,Ult,Survival/Dice,"Situational","1 - important, and manablast too",
