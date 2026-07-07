@@ -4,16 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AG Assistant</title>
-    <!-- Слот под Favicon -->
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="apple-mobile-web-app-title" content="AG">
-    
-    <link rel="icon" type="image/png" href="favicon.png">
-    <link rel="apple-touch-icon" href="favicon.png">
+    <link rel="icon" type="image/png" href="img/favicon.png">
     <style>
         /* =========================================
-           CSS: СОВРЕМЕННЫЙ APPLE GLASSMORPHISM 
+           CSS: APPLE GLASSMORPHISM (Light & Dark Elegance)
            ========================================= */
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
 
@@ -25,6 +19,7 @@
             --accent-red-hover: #ff453a;
             --accent-gold: #ffcc00;
             --accent-blue: #0a84ff;
+            --accent-green: #34c759;
             /* Apple-like Glass */
             --glass-bg: rgba(30, 30, 35, 0.4);
             --glass-panel: rgba(20, 20, 25, 0.65);
@@ -86,23 +81,7 @@
             align-items: center;
         }
 
-        .logo-container {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 15px;
-            margin-bottom: 0.5rem;
-        }
-
-        .logo-slot {
-            width: 48px;
-            height: 48px;
-            object-fit: contain;
-            border-radius: 12px;
-            filter: drop-shadow(0 4px 10px rgba(0,0,0,0.3));
-        }
-
-        /* Переключатель языка */
+        /* Переключатель языка (стиль iOS Pill) */
         .lang-toggle {
             position: absolute;
             top: 0;
@@ -133,6 +112,7 @@
             background: linear-gradient(135deg, #fff, #a1a1a6);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
+            margin-bottom: 0.5rem;
         }
 
         .subtitle {
@@ -296,29 +276,29 @@
 
         /* ==================== БАН ЛИСТ (ТОП 4) ==================== */
         .banlist-section {
-            margin-bottom: 3rem;
+            margin-bottom: 2rem;
             background: rgba(255, 59, 48, 0.03);
             border: 1px solid rgba(255, 59, 48, 0.15);
-            border-radius: 24px;
-            padding: 2rem;
-            box-shadow: 0 10px 40px rgba(255, 59, 48, 0.05);
+            border-radius: 20px;
+            padding: 1.2rem; 
+            box-shadow: 0 10px 30px rgba(255, 59, 48, 0.05);
         }
 
         .banlist-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 20px;
+            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); 
+            gap: 12px;
         }
 
         .ban-card {
             background: rgba(20, 10, 10, 0.6);
             border: 1px solid rgba(255, 59, 48, 0.3);
-            border-radius: 20px;
+            border-radius: 14px;
             display: flex;
             flex-direction: column;
             align-items: center;
             text-align: center;
-            padding: 1.5rem 1rem;
+            padding: 0.8rem 0.6rem;
             cursor: pointer;
             transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
         }
@@ -331,43 +311,43 @@
         }
 
         .ban-card .hero-avatar {
-            width: 70px; height: 70px;
+            width: 48px; height: 48px;
             border-radius: 50%;
             object-fit: cover;
             border: 2px solid rgba(255, 59, 48, 0.5);
-            box-shadow: 0 4px 15px rgba(255, 59, 48, 0.2);
-            margin-bottom: 1rem;
+            box-shadow: 0 4px 10px rgba(255, 59, 48, 0.2);
+            margin-bottom: 0.6rem;
         }
 
         .ban-card .hero-name {
-            font-size: 1.1rem;
+            font-size: 0.95rem;
             font-weight: 700;
             color: #fff;
-            margin-bottom: 0.5rem;
+            margin-bottom: 0.4rem;
         }
         
         .ban-card .hero-power {
             background: rgba(255, 59, 48, 0.15);
             color: #ff6b6b;
-            padding: 4px 10px;
-            border-radius: 8px;
-            font-size: 0.85rem;
+            padding: 2px 6px;
+            border-radius: 6px;
+            font-size: 0.75rem;
             font-weight: bold;
         }
 
         /* ==================== СЛОТЫ ДРАФТА ==================== */
-        .draft-section { margin-bottom: 3rem; }
+        .draft-section { margin-bottom: 1.5rem; } 
 
         .slots-container {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 20px;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); 
+            gap: 12px;
         }
 
         .slot-card-empty {
-            min-height: 280px;
+            min-height: 180px; 
             border: 2px dashed rgba(255,255,255,0.2);
-            border-radius: 24px;
+            border-radius: 16px;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -387,7 +367,30 @@
         }
 
         .slot-card-empty .plus-icon {
-            font-size: 3.5rem; margin-bottom: 10px; font-weight: 300;
+            font-size: 2.5rem; margin-bottom: 8px; font-weight: 300;
+        }
+
+        .slots-container .hero-card {
+            padding: 1rem;
+            gap: 0.8rem;
+            border-radius: 16px;
+        }
+        .slots-container .hero-avatar {
+            width: 44px; height: 44px;
+        }
+        .slots-container .hero-name {
+            font-size: 1rem;
+        }
+        .slots-container .hero-stats {
+            padding: 0.6rem;
+            font-size: 0.8rem;
+        }
+        .slots-container .card-matched-icon {
+            width: 18px; height: 18px;
+        }
+        .slots-container .btn-card {
+            padding: 8px;
+            font-size: 0.8rem;
         }
 
         .best-badge {
@@ -453,6 +456,16 @@
             animation: fadeIn 0.4s ease-out;
         }
 
+        .hero-card::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; height: 4px;
+            background: linear-gradient(90deg, var(--accent-red), var(--accent-gold));
+            border-radius: 24px 24px 0 0; 
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
         @keyframes fadeIn {
             from { opacity: 0; transform: translateY(15px); }
             to { opacity: 1; transform: translateY(0); }
@@ -464,6 +477,7 @@
             border-color: rgba(255,255,255,0.2);
             box-shadow: 0 15px 35px rgba(0,0,0,0.4);
         }
+        .hero-card:hover::before { opacity: 1; }
 
         .hero-header { display: flex; justify-content: space-between; align-items: center; }
         .hero-header-left { display: flex; align-items: center; gap: 15px; }
@@ -493,8 +507,12 @@
         .stat-label { color: var(--text-muted); }
         .stat-value { font-weight: 600; }
         
+        .stat-value.highlight { color: var(--accent-blue); }
+        .stat-value.highlight-green { color: var(--accent-green); }
+        .stat-value.highlight-red { color: var(--accent-red); }
+
         .matched-styles {
-            color: #34c759; font-size: 0.9rem; font-weight: 600; margin-top: 5px;
+            color: var(--accent-green); font-size: 0.9rem; font-weight: 600; margin-top: 5px;
             padding-top: 8px; border-top: 1px solid rgba(255,255,255,0.05);
             display: flex; align-items: center; flex-wrap: wrap; gap: 8px;
         }
@@ -589,7 +607,7 @@
         .panel-matrix-canvas {
             position: absolute; inset: 0; width: 100%; height: 100%;
             z-index: -1; opacity: 0.35; pointer-events: none;
-            mix-blend-mode: screen; /* Крутой эффект наложения */
+            mix-blend-mode: screen; 
         }
 
         .side-panel-content {
@@ -664,16 +682,37 @@
         }
 
         @media (max-width: 768px) {
-            .container { padding: 4rem 1rem 1rem; }
+            /* Исправленный контейнер без overflow-x, чтобы избежать горизонтальной прокрутки всего сайта */
+            .container { padding: 2rem 1rem 1rem; }
             .styles-grid { max-width: 100%; gap: 10px; }
             .style-btn { width: 65px; height: 65px; }
             .style-img { width: 40px; height: 40px; }
             .controls { flex-direction: column; }
-            .lang-toggle { top: -45px; right: 50%; transform: translateX(50%); }
+            
+            .lang-toggle { 
+                position: relative;
+                margin-bottom: 15px;
+                top: 0;
+                right: 0;
+                transform: none;
+            }
+            .header-container { align-items: center; }
+
             .results-header-container { flex-direction: column; align-items: stretch; }
             .search-input { max-width: 100%; }
             .side-panel { max-width: 100%; border-left: none; }
             .build-grid { grid-template-columns: 1fr; }
+
+            /* Форсируем отображение строго сверху вниз (в одну колонку) для мобильных устройств */
+            .banlist-grid, .slots-container, .results-grid {
+                grid-template-columns: 1fr;
+                display: grid;
+                flex-wrap: wrap; /* Сбрасываем возможные конфликты */
+                overflow-x: hidden;
+            }
+            
+            .ban-card { flex: auto; }
+            .slots-container > * { flex: auto; }
         }
     </style>
 </head>
@@ -691,10 +730,7 @@
                 <span id="lang-ru" class="active">RU</span> / <span id="lang-en">EN</span>
             </div>
             
-            <div class="logo-container">
-                <img src="img/logo.png" alt="Logo" class="logo-slot" onerror="this.style.display='none'">
-                <h1>AG Assistant</h1>
-            </div>
+            <h1>AG Assistant</h1>
             <p class="subtitle" data-i18n="subtitle">Метавые билды в Auto Gladiators</p>
         </header>
 
@@ -750,7 +786,7 @@
     <div id="hero-select-modal" class="modal-overlay" onclick="app.closeSelectModal(event)">
         <div class="modal-content" onclick="event.stopPropagation()">
             <button class="modal-close-btn" onclick="app.closeSelectModal(null, true)">✕</button>
-            <h3 style="margin-bottom: 1rem; color: white; font-size: 1.3rem;" data-i18n="selectHeroTitle">Выберите героя</h3>
+            <h3 style="margin-bottom: 1rem; color: white; font-size: 1.3rem;" data-i18n="selectHeroTitle">Выберите героя для слота</h3>
             <input type="text" id="slot-hero-search" class="search-input" style="width: 100%; margin-bottom: 1rem;" data-i18n-ph="searchPlaceholder" placeholder="Поиск героя..." oninput="app.filterSelectModal()">
             <div id="select-modal-list" class="select-hero-list"></div>
         </div>
@@ -815,7 +851,7 @@
                     <div class="build-item">
                         <span>Hero Shard</span>
                         <div class="shard-wrapper">
-                            <img id="panel-shard-img" src="styles/Shard.png" alt="Shard" style="width: 24px; height: 24px; object-fit: contain;" onerror="this.style.display='none'">
+                            <img id="panel-shard-img" src="img/styles/Shard.png" alt="Shard" style="width: 24px; height: 24px; object-fit: contain;" onerror="this.style.display='none'">
                             <strong id="panel-shard">-</strong>
                         </div>
                     </div>
@@ -835,9 +871,10 @@
          JAVASCRIPT: ЛОГИКА ПРИЛОЖЕНИЯ
          ========================================= -->
     <script>
-        // --- Динамичная Хакерская Матрица для Боковой Панели ---
+        // --- Динамичная Матрица для Боковой Панели ---
         function initPanelMatrix() {
             const canvas = document.getElementById('panel-matrix-canvas');
+            if (!canvas) return;
             const ctx = canvas.getContext('2d');
             
             let width, height, columns, drops;
@@ -845,8 +882,8 @@
             const chars = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ!@#$%^&*()_+-=[]{}|;:,.<>?'.split('');
 
             function resize() {
-                width = canvas.width = canvas.offsetWidth;
-                height = canvas.height = canvas.offsetHeight;
+                width = canvas.width = canvas.offsetWidth || window.innerWidth;
+                height = canvas.height = canvas.offsetHeight || window.innerHeight;
                 columns = Math.floor(width / fontSize);
                 drops = [];
                 for(let x = 0; x < columns; x++) {
@@ -854,12 +891,14 @@
                 }
             }
 
-            resize();
+            // Инициализация при первой отрисовке
+            setTimeout(resize, 100);
             window.addEventListener('resize', resize);
 
             function draw() {
                 // Рисуем только если панель открыта (экономим ресурсы)
-                if (!document.getElementById('side-panel').classList.contains('active')) {
+                const panel = document.getElementById('side-panel');
+                if (!panel || !panel.classList.contains('active')) {
                     requestAnimationFrame(draw);
                     return;
                 }
@@ -909,11 +948,13 @@ Enigma,2,2,2,Ult,Magic,Survival,"Good to have","4 - Not important",4.9`;
                 searchPlaceholder: "Поиск героя...",
                 matchText: "Совпадение:",
                 ratingText: "Рейтинг:",
+                ratingTextShort: "Рейтинг:",
                 matchedText: "Совпало:",
                 openBuildBtn: "Открыть билд",
                 replaceBtn: "Заменить",
                 emptySlot: "Выбрать героя",
                 selectHeroTitle: "Выберите героя для слота",
+                counterText: "Анти-мета:",
                 noResults: "Подходящих героев не найдено. Попробуйте выбрать другие стили.",
                 toastNeed8: "Выбрано {count} из 8. Пожалуйста, выберите ровно 8 стилей!",
                 toastMax8: "Можно выбрать максимум 8 стилей!",
@@ -930,11 +971,13 @@ Enigma,2,2,2,Ult,Magic,Survival,"Good to have","4 - Not important",4.9`;
                 searchPlaceholder: "Search hero...",
                 matchText: "Match:",
                 ratingText: "Rating:",
+                ratingTextShort: "Rating:",
                 matchedText: "Matched:",
                 openBuildBtn: "Open Build",
                 replaceBtn: "Reroll",
                 emptySlot: "Select Hero",
                 selectHeroTitle: "Select Hero for Slot",
+                counterText: "Anti-Meta:",
                 noResults: "No matching heroes found. Try selecting other styles.",
                 toastNeed8: "Selected {count} out of 8. Please select exactly 8 styles!",
                 toastMax8: "You can select a maximum of 8 styles!",
@@ -946,7 +989,10 @@ Enigma,2,2,2,Ult,Magic,Survival,"Good to have","4 - Not important",4.9`;
             heroesData: [],
             selectedStyles: new Set(),
             allAvailableStyles: new Set(),
-            currentResults: [],
+            
+            // В this.allCalculatedResults хранятся АБСОЛЮТНО все герои с уже рассчитанным рейтингом (после нажатия кнопки Анализ).
+            allCalculatedResults: [],
+            
             currentLang: 'ru',
             
             // Ленивая загрузка
@@ -959,6 +1005,28 @@ Enigma,2,2,2,Ult,Magic,Survival,"Good to have","4 - Not important",4.9`;
             // Слоты драфта
             draftSlots: [null, null, null],
             activeSlotIndex: null,
+
+            // ==========================================
+            // ТАБЛИЦА МАТЧАПОВ (КОНТР-ПИКИ от -10 до 10)
+            // ==========================================
+            MATCHUP_MATRIX: {
+                "Attack":   { "Attack": 0, "Chaos": -2, "Crit": -4, "Evade": -6, "Frost": -5, "Fury": -2, "Health": 3, "Injure": -2, "Poison": -3, "Regen": 2, "Shield": -5, "Spirits": -6, "Ult": -2, "Dice": 0, "Survival": 0, "Procs": 0 },
+                "Chaos":    { "Attack": 2, "Chaos": 0, "Crit": 1, "Evade": 3, "Frost": -3, "Fury": 4, "Health": -4, "Injure": 0, "Poison": -1, "Regen": 5, "Shield": 2, "Spirits": 3, "Ult": 5, "Dice": 0, "Survival": 0, "Procs": 0 },
+                "Crit":     { "Attack": 4, "Chaos": -1, "Crit": 0, "Evade": 6, "Frost": -7, "Fury": 4, "Health": -6, "Injure": 3, "Poison": 3, "Regen": -5, "Shield": -3, "Spirits": 5, "Ult": 2, "Dice": 0, "Survival": 0, "Procs": 0 },
+                "Evade":    { "Attack": 6, "Chaos": -3, "Crit": -6, "Evade": 0, "Frost": -2, "Fury": 1, "Health": 0, "Injure": 7, "Poison": -5, "Regen": 1, "Shield": 0, "Spirits": 0, "Ult": -4, "Dice": 0, "Survival": 0, "Procs": 0 },
+                "Frost":    { "Attack": 5, "Chaos": 3, "Crit": 7, "Evade": 2, "Frost": 0, "Fury": 5, "Health": -1, "Injure": 2, "Poison": 0, "Regen": 2, "Shield": 1, "Spirits": 1, "Ult": 6, "Dice": 0, "Survival": 0, "Procs": 0 },
+                "Fury":     { "Attack": 2, "Chaos": -4, "Crit": -4, "Evade": -1, "Frost": -5, "Fury": 0, "Health": -2, "Injure": 1, "Poison": -1, "Regen": 0, "Shield": -3, "Spirits": -3, "Ult": -3, "Dice": 0, "Survival": 0, "Procs": 0 },
+                "Health":   { "Attack": -3, "Chaos": 4, "Crit": 6, "Evade": 0, "Frost": 1, "Fury": 2, "Health": 0, "Injure": -3, "Poison": -3, "Regen": -1, "Shield": -1, "Spirits": 0, "Ult": 5, "Dice": 0, "Survival": 0, "Procs": 0 },
+                "Injure":   { "Attack": 2, "Chaos": 0, "Crit": -3, "Evade": -7, "Frost": -2, "Fury": -1, "Health": 3, "Injure": 0, "Poison": -1, "Regen": -3, "Shield": -3, "Spirits": 6, "Ult": 2, "Dice": 0, "Survival": 0, "Procs": 0 },
+                "Poison":   { "Attack": 3, "Chaos": 1, "Crit": -3, "Evade": 5, "Frost": 0, "Fury": 1, "Health": 3, "Injure": 1, "Poison": 0, "Regen": -7, "Shield": 5, "Spirits": 7, "Ult": 2, "Dice": 0, "Survival": 0, "Procs": 0 },
+                "Regen":    { "Attack": -2, "Chaos": -5, "Crit": 5, "Evade": -1, "Frost": -2, "Fury": 0, "Health": 1, "Injure": 3, "Poison": 7, "Regen": 0, "Shield": 1, "Spirits": 1, "Ult": 5, "Dice": 0, "Survival": 0, "Procs": 0 },
+                "Shield":   { "Attack": 5, "Chaos": -2, "Crit": 3, "Evade": 0, "Frost": -1, "Fury": 3, "Health": 1, "Injure": 3, "Poison": -5, "Regen": -1, "Shield": 0, "Spirits": 0, "Ult": 3, "Dice": 0, "Survival": 0, "Procs": 0 },
+                "Spirits":  { "Attack": 6, "Chaos": -3, "Crit": -5, "Evade": 0, "Frost": -1, "Fury": 3, "Health": 0, "Injure": -6, "Poison": -7, "Regen": -1, "Shield": 0, "Spirits": 0, "Ult": -6, "Dice": 0, "Survival": 0, "Procs": 0 },
+                "Ult":      { "Attack": 2, "Chaos": -5, "Crit": -2, "Evade": 4, "Frost": -6, "Fury": 3, "Health": -5, "Injure": -2, "Poison": -2, "Regen": -5, "Shield": -3, "Spirits": 6, "Ult": 0, "Dice": 0, "Survival": 0, "Procs": 0 },
+                "Dice":     { "Attack": 0, "Chaos": 0, "Crit": 0, "Evade": 0, "Frost": 0, "Fury": 0, "Health": 0, "Injure": 0, "Poison": 0, "Regen": 0, "Shield": 0, "Spirits": 0, "Ult": 0, "Dice": 0, "Survival": 0, "Procs": 0 },
+                "Survival": { "Attack": 0, "Chaos": 0, "Crit": 0, "Evade": 0, "Frost": 0, "Fury": 0, "Health": 0, "Injure": 0, "Poison": 0, "Regen": 0, "Shield": 0, "Spirits": 0, "Ult": 0, "Dice": 0, "Survival": 0, "Procs": 0 },
+                "Procs":    { "Attack": 0, "Chaos": 0, "Crit": 0, "Evade": 0, "Frost": 0, "Fury": 0, "Health": 0, "Injure": 0, "Poison": 0, "Regen": 0, "Shield": 0, "Spirits": 0, "Ult": 0, "Dice": 0, "Survival": 0, "Procs": 0 }
+            },
             
             async init() {
                 let csvText = '';
@@ -968,6 +1036,7 @@ Enigma,2,2,2,Ult,Magic,Survival,"Good to have","4 - Not important",4.9`;
                     csvText = await response.text();
                 } catch (error) {
                     console.warn("Файл heroes.csv не найден. Используем демо-базу.");
+                    this.showToast(translations[this.currentLang].toastDemo);
                     csvText = DEMO_CSV;
                 }
                 
@@ -988,10 +1057,19 @@ Enigma,2,2,2,Ult,Magic,Survival,"Good to have","4 - Not important",4.9`;
                 
                 this.applyTranslations();
                 
-                if (this.currentResults.length > 0) {
+                if (this.allCalculatedResults.length > 0) {
                     this.renderBanList();
                     this.renderDraftSlots();
-                    this.renderResults(this.resultsToRender, false); 
+                    
+                    // Обновляем Тир Лист с учетом текущего поиска
+                    const query = document.getElementById('search-input').value.toLowerCase();
+                    let filtered = this.allCalculatedResults;
+                    if (query.trim() === '') {
+                        filtered = this.allCalculatedResults.filter(r => r.baseScore > 0);
+                    } else {
+                        filtered = this.allCalculatedResults.filter(r => r.heroData.Hero.toLowerCase().includes(query));
+                    }
+                    this.renderResults(filtered, false); 
                 }
             },
 
@@ -1077,7 +1155,7 @@ Enigma,2,2,2,Ult,Magic,Survival,"Good to have","4 - Not important",4.9`;
                     btn.onclick = () => this.toggleStyle(style, btn);
                     
                     btn.innerHTML = `
-                        <img src="styles/${style}.png" alt="${style}" class="style-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                        <img src="img/styles/${style}.png" alt="${style}" class="style-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
                         <span class="style-fallback-text" style="display:none;">${style}</span>
                     `;
                     grid.appendChild(btn);
@@ -1123,11 +1201,12 @@ Enigma,2,2,2,Ult,Magic,Survival,"Good to have","4 - Not important",4.9`;
                 document.getElementById('search-input').value = '';
                 
                 this.draftSlots = [null, null, null];
-                this.currentResults = [];
+                this.allCalculatedResults = [];
                 this.resultsToRender = [];
                 this.updateCounter();
             },
 
+            // =============== ЯДРО РАСЧЕТА С УЧЕТОМ КОНТР-ПИКОВ ===============
             findBestHeroes() {
                 if (this.selectedStyles.size !== 8) {
                     let msg = translations[this.currentLang].toastNeed8.replace('{count}', this.selectedStyles.size);
@@ -1136,12 +1215,24 @@ Enigma,2,2,2,Ult,Magic,Survival,"Good to have","4 - Not important",4.9`;
                 }
 
                 let results = this.heroesData.map((hero, index) => {
-                    let score = 0, matchedList = [];
+                    let baseScore = 0; 
+                    let matchedList = [];
+
+                    // 1. Считаем базовые совпадения с лобби (без дублирования очков за количество стилей в слоте)
                     const checkMatch = (heroStyleField, points) => {
                         if (!heroStyleField) return;
-                        heroStyleField.split('/').map(s => s.trim()).forEach(s => {
-                            if (this.selectedStyles.has(s)) { score += points; matchedList.push(s); }
+                        const styles = heroStyleField.split('/').map(s => s.trim());
+                        let slotMatched = false;
+                        styles.forEach(s => {
+                            if (this.selectedStyles.has(s)) { 
+                                matchedList.push(s); 
+                                slotMatched = true; 
+                            }
                         });
+                        // Добавляем баллы за слот ТОЛЬКО ОДИН РАЗ
+                        if (slotMatched) {
+                            baseScore += points;
+                        }
                     };
 
                     checkMatch(hero.MainStyle1, 4);
@@ -1151,21 +1242,48 @@ Enigma,2,2,2,Ult,Magic,Survival,"Good to have","4 - Not important",4.9`;
                     const uniqueMatches = [...new Set(matchedList)];
                     const power = parseFloat(hero.Power) || 0;
                     
-                    return { 
-                        heroIndex: index, heroData: hero, score, 
-                        finalRating: (score * 10) + (power * 5), 
-                        matchPercent: Math.min((score / 8) * 100, 100),
-                        uniqueMatches, power 
-                    };
+                    // 2. Считаем Анти-мету (Контр-потенциал) по матрице
+                    let totalCounter = 0;
+                    
+                    // Берем АБСОЛЮТНО все стили героя
+                    const allHeroStylesRaw = [hero.MainStyle1, hero.MainStyle2, hero.ExtraStyle];
+                    const allHeroStyles = [];
+                    allHeroStylesRaw.forEach(field => {
+                        if(field) {
+                            field.split('/').forEach(s => {
+                                const clean = s.trim();
+                                if(clean && clean.toLowerCase() !== 'none') allHeroStyles.push(clean);
+                            });
+                        }
+                    });
+                    const uniqueHeroStyles = [...new Set(allHeroStyles)];
+
+                    // Суммируем матчапы
+                    uniqueHeroStyles.forEach(heroStyle => {
+                        this.selectedStyles.forEach(lobbyStyle => {
+                            if (this.MATCHUP_MATRIX[heroStyle] && this.MATCHUP_MATRIX[heroStyle][lobbyStyle] !== undefined) {
+                                totalCounter += this.MATCHUP_MATRIX[heroStyle][lobbyStyle];
+                            }
+                        });
+                    });
+
+                    // Нормализуем контр-счет: делим на количество уникальных стилей героя
+                    let counterScore = uniqueHeroStyles.length > 0 ? (totalCounter / uniqueHeroStyles.length) : 0;
+                    counterScore = Number(counterScore.toFixed(1)); 
+
+                    // 3. Считаем Итоговый Рейтинг
+                    const finalRating = (baseScore * 10) + counterScore + (power * 5);
+                    const matchPercent = Math.min((baseScore / 8) * 100, 100);
+                    
+                    return { heroIndex: index, heroData: hero, baseScore, counterScore, finalRating, matchPercent, uniqueMatches, power };
                 });
 
                 // Сортировка: сначала по итоговому рейтингу, затем по проценту совпадения
                 results.sort((a, b) => b.finalRating - a.finalRating || b.matchPercent - a.matchPercent);
 
-                // --- УДАЛЕНИЕ ДУБЛИКАТОВ СБОРОК ---
+                // УДАЛЕНИЕ ДУБЛИКАТОВ СБОРОК (Оставляем только самый мощный билд для каждого героя)
                 const uniqueResults = [];
                 const seenHeroes = new Set();
-                
                 for (const res of results) {
                     if (!seenHeroes.has(res.heroData.Hero)) {
                         seenHeroes.add(res.heroData.Hero);
@@ -1173,7 +1291,7 @@ Enigma,2,2,2,Ult,Magic,Survival,"Good to have","4 - Not important",4.9`;
                     }
                 }
 
-                this.currentResults = uniqueResults;
+                this.allCalculatedResults = uniqueResults;
                 
                 // Показываем секции
                 document.getElementById('banlist-section').style.display = 'block';
@@ -1183,7 +1301,9 @@ Enigma,2,2,2,Ult,Magic,Survival,"Good to have","4 - Not important",4.9`;
                 
                 this.renderBanList();
                 this.renderDraftSlots();
-                this.renderResults(this.currentResults.filter(r => r.score > 0), true);
+                
+                // По умолчанию (до поиска) показываем только тех, кто подходит (baseScore > 0)
+                this.renderResults(this.allCalculatedResults.filter(r => r.baseScore > 0), true);
             },
 
             // --- БАН ЛИСТ ---
@@ -1192,18 +1312,18 @@ Enigma,2,2,2,Ult,Magic,Survival,"Good to have","4 - Not important",4.9`;
                 container.innerHTML = '';
                 const t = translations[this.currentLang];
                 
-                // Берем топ 4 героя из всех результатов
-                const top4 = this.currentResults.slice(0, 4);
+                // Берем топ 4 героя (из тех, что подходят в лобби)
+                const top4 = this.allCalculatedResults.filter(r => r.baseScore > 0).slice(0, 4);
                 const fallbackSrc = "data:image/svg+xml;charset=UTF-8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2280%22 height=%2280%22%3E%3Crect width=%2280%22 height=%2280%22 fill=%22%23333%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 fill=%22%23a0a0a0%22 text-anchor=%22middle%22 dominant-baseline=%22middle%22 font-size=%2224%22%3E?%3C/text%3E%3C/svg%3E";
 
                 top4.forEach(res => {
-                    const heroImgSrc = `heroes/${res.heroData.Hero}.png`;
+                    const heroImgSrc = `img/heroes/${res.heroData.Hero}.png`;
                     container.innerHTML += `
                         <div class="ban-card" onclick="app.openPanel(${res.heroIndex})">
                             <img src="${heroImgSrc}" alt="${res.heroData.Hero}" class="hero-avatar" onerror="this.src='${fallbackSrc}'">
                             <div class="hero-name">${res.heroData.Hero}</div>
                             <div class="hero-power">
-                                ${t.ratingText} ${res.finalRating.toFixed(1)}
+                                ${t.ratingTextShort} ${res.finalRating.toFixed(1)}
                             </div>
                         </div>
                     `;
@@ -1218,12 +1338,12 @@ Enigma,2,2,2,Ult,Magic,Survival,"Good to have","4 - Not important",4.9`;
                 const fallbackSrc = "data:image/svg+xml;charset=UTF-8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2260%22 height=%2260%22%3E%3Crect width=%2260%22 height=%2260%22 fill=%22%23333%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 fill=%22%23a0a0a0%22 text-anchor=%22middle%22 dominant-baseline=%22middle%22 font-size=%2224%22%3E?%3C/text%3E%3C/svg%3E";
 
                 // Находим героя с самым высоким рейтингом среди выбранных слотов
-                let maxRating = -1;
+                let maxRating = -9999;
                 let bestSlotIndex = -1;
                 
                 for (let i = 0; i < 3; i++) {
                     if (this.draftSlots[i]) {
-                        const res = this.currentResults.find(r => r.heroData.Hero === this.draftSlots[i].Hero);
+                        const res = this.allCalculatedResults.find(r => r.heroData.Hero === this.draftSlots[i].Hero);
                         if (res && res.finalRating > maxRating) {
                             maxRating = res.finalRating;
                             bestSlotIndex = i;
@@ -1242,16 +1362,20 @@ Enigma,2,2,2,Ult,Magic,Survival,"Good to have","4 - Not important",4.9`;
                             </div>
                         `;
                     } else {
-                        const res = this.currentResults.find(r => r.heroData.Hero === heroData.Hero);
-                        const heroImgSrc = `heroes/${res.heroData.Hero}.png`;
+                        const res = this.allCalculatedResults.find(r => r.heroData.Hero === heroData.Hero);
+                        const heroImgSrc = `img/heroes/${res.heroData.Hero}.png`;
                         const matchedIconsHtml = res.uniqueMatches.map(style => 
-                            `<img src="styles/${style}.png" alt="${style}" title="${style}" class="card-matched-icon" onerror="this.style.display='none';">`
+                            `<img src="img/styles/${style}.png" alt="${style}" title="${style}" class="card-matched-icon" onerror="this.style.display='none';">`
                         ).join('');
 
                         // Логика "BEST" бейджа (Золотая рамка только у лучшего)
-                        const isBest = (i === bestSlotIndex && maxRating > 0);
+                        const isBest = (i === bestSlotIndex && maxRating > -9999);
                         const borderColor = isBest ? 'var(--accent-gold)' : 'var(--glass-border)';
                         const bestBadgeHtml = isBest ? `<div class="best-badge">BEST</div>` : '';
+
+                        // Цвет анти-меты
+                        const cColor = res.counterScore > 0 ? 'highlight-green' : (res.counterScore < 0 ? 'highlight-red' : '');
+                        const cSign = res.counterScore > 0 ? '+' : '';
 
                         container.innerHTML += `
                             <div class="hero-card" style="border-color: ${borderColor};">
@@ -1267,6 +1391,10 @@ Enigma,2,2,2,Ult,Magic,Survival,"Good to have","4 - Not important",4.9`;
                                     <div class="stat-row">
                                         <span class="stat-label">${t.matchText}</span>
                                         <span class="stat-value">${Math.round(res.matchPercent)}%</span>
+                                    </div>
+                                    <div class="stat-row">
+                                        <span class="stat-label">${t.counterText}</span>
+                                        <span class="stat-value ${cColor}">${cSign}${res.counterScore}</span>
                                     </div>
                                     <div class="stat-row">
                                         <span class="stat-label">${t.ratingText}</span>
@@ -1293,7 +1421,8 @@ Enigma,2,2,2,Ult,Magic,Survival,"Good to have","4 - Not important",4.9`;
                 this.activeSlotIndex = slotIndex;
                 document.getElementById('hero-select-modal').classList.add('active');
                 document.getElementById('slot-hero-search').value = '';
-                this.renderSelectModalList(this.currentResults); // Показываем всех героев без дубликатов
+                // По умолчанию показываем только подходящих героев (чтобы не путать)
+                this.renderSelectModalList(this.allCalculatedResults.filter(r => r.baseScore > 0));
             },
 
             closeSelectModal(event, force = false) {
@@ -1304,9 +1433,16 @@ Enigma,2,2,2,Ult,Magic,Survival,"Good to have","4 - Not important",4.9`;
 
             filterSelectModal() {
                 const query = document.getElementById('slot-hero-search').value.toLowerCase();
-                const filtered = this.currentResults.filter(res => 
-                    res.heroData.Hero.toLowerCase().includes(query)
-                );
+                let filtered;
+                if (query.trim() === '') {
+                    // Если строка пустая - показываем дефолтных
+                    filtered = this.allCalculatedResults.filter(r => r.baseScore > 0);
+                } else {
+                    // Если введено имя - ИЩЕМ ПО ВСЕЙ БАЗЕ!
+                    filtered = this.allCalculatedResults.filter(r => 
+                        r.heroData.Hero.toLowerCase().includes(query)
+                    );
+                }
                 this.renderSelectModalList(filtered);
             },
 
@@ -1321,7 +1457,7 @@ Enigma,2,2,2,Ult,Magic,Survival,"Good to have","4 - Not important",4.9`;
                     item.onclick = () => this.selectHeroForSlot(res.heroIndex);
                     
                     item.innerHTML = `
-                        <img src="heroes/${res.heroData.Hero}.png" alt="Hero" onerror="this.src='${fallbackSrc}'">
+                        <img src="img/heroes/${res.heroData.Hero}.png" alt="Hero" onerror="this.src='${fallbackSrc}'">
                         <div class="hero-details">
                             <strong>${res.heroData.Hero}</strong>
                             <span>Power: ★ ${res.power.toFixed(1)} | Совпадение: ${Math.round(res.matchPercent)}%</span>
@@ -1345,11 +1481,16 @@ Enigma,2,2,2,Ult,Magic,Survival,"Good to have","4 - Not important",4.9`;
                 clearTimeout(this.searchTimeout);
                 this.searchTimeout = setTimeout(() => {
                     const query = document.getElementById('search-input').value.toLowerCase();
-                    if (!this.currentResults) return;
+                    if (!this.allCalculatedResults) return;
                     
-                    const filtered = this.currentResults.filter(res => 
-                        res.score > 0 && res.heroData.Hero.toLowerCase().includes(query)
-                    );
+                    let filtered;
+                    if (query.trim() === '') {
+                        // По умолчанию только подходящие героев
+                        filtered = this.allCalculatedResults.filter(r => r.baseScore > 0);
+                    } else {
+                        // ПОИСК ПО ВСЕЙ БАЗЕ! (можно найти любого героя)
+                        filtered = this.allCalculatedResults.filter(r => r.heroData.Hero.toLowerCase().includes(query));
+                    }
                     this.renderResults(filtered, false);
                 }, 300);
             },
@@ -1403,10 +1544,13 @@ Enigma,2,2,2,Ult,Magic,Survival,"Good to have","4 - Not important",4.9`;
                     const card = document.createElement('div');
                     card.className = 'hero-card';
                     
-                    const heroImgSrc = `heroes/${res.heroData.Hero}.png`;
+                    const heroImgSrc = `img/heroes/${res.heroData.Hero}.png`;
                     const matchedIconsHtml = res.uniqueMatches.map(style => 
-                        `<img src="styles/${style}.png" alt="${style}" title="${style}" class="card-matched-icon" onerror="this.style.display='none';">`
+                        `<img src="img/styles/${style}.png" alt="${style}" title="${style}" class="card-matched-icon" onerror="this.style.display='none';">`
                     ).join('');
+
+                    const cColor = res.counterScore > 0 ? 'highlight-green' : (res.counterScore < 0 ? 'highlight-red' : '');
+                    const cSign = res.counterScore > 0 ? '+' : '';
 
                     card.innerHTML = `
                         <div class="hero-header">
@@ -1420,6 +1564,10 @@ Enigma,2,2,2,Ult,Magic,Survival,"Good to have","4 - Not important",4.9`;
                             <div class="stat-row">
                                 <span class="stat-label">${t.matchText}</span>
                                 <span class="stat-value">${Math.round(res.matchPercent)}%</span>
+                            </div>
+                            <div class="stat-row">
+                                <span class="stat-label">${t.counterText}</span>
+                                <span class="stat-value ${cColor}">${cSign}${res.counterScore}</span>
                             </div>
                             <div class="stat-row">
                                 <span class="stat-label">${t.ratingText}</span>
@@ -1457,7 +1605,7 @@ Enigma,2,2,2,Ult,Magic,Survival,"Good to have","4 - Not important",4.9`;
                 }
 
                 if (styles.length === 0) { 
-                    el.innerHTML = '<strong>-</strong>'; 
+                    el.innerHTML = '<strong style="color: var(--text-muted);">- Empty -</strong>'; 
                     return; 
                 }
 
@@ -1465,7 +1613,7 @@ Enigma,2,2,2,Ult,Magic,Survival,"Good to have","4 - Not important",4.9`;
                 styles.forEach(style => {
                     html += `
                         <div class="modal-style-icon" title="${style}">
-                            <img src="styles/${style}.png" alt="${style}" onerror="this.style.display='none';">
+                            <img src="img/styles/${style}.png" alt="${style}" onerror="this.style.display='none';">
                             <span>${style}</span>
                         </div>
                     `;
@@ -1478,9 +1626,9 @@ Enigma,2,2,2,Ult,Magic,Survival,"Good to have","4 - Not important",4.9`;
                 const hero = this.heroesData[heroIndex];
                 if (!hero) return;
 
-                const fallbackSrc = "data:image/svg+xml;charset=UTF-8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22100%22 height=%22100%22%3E%3Crect width=%22100%22 height=%22100%22 fill=%22%23000%22 stroke=%22%2300d2ff%22 stroke-width=%222%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 fill=%22%2300d2ff%22 text-anchor=%22middle%22 dominant-baseline=%22middle%22 font-size=%2240%22%3E?%3C/text%3E%3C/svg%3E";
+                const fallbackSrc = "data:image/svg+xml;charset=UTF-8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22100%22 height=%22100%22%3E%3Crect width=%22100%22 height=%22100%22 fill=%22%23000%22 stroke=%22%230a84ff%22 stroke-width=%222%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 fill=%22%230a84ff%22 text-anchor=%22middle%22 dominant-baseline=%22middle%22 font-size=%2240%22%3E?%3C/text%3E%3C/svg%3E";
                 
-                const imgSrc = `heroes/${hero.Hero}.png`;
+                const imgSrc = `img/heroes/${hero.Hero}.png`;
                 
                 const imgElement = document.getElementById('panel-hero-img');
                 imgElement.src = imgSrc;
@@ -1503,7 +1651,7 @@ Enigma,2,2,2,Ult,Magic,Survival,"Good to have","4 - Not important",4.9`;
                 document.getElementById('panel-shard').textContent = hero.HeroShard || '-';
                 const shardImg = document.getElementById('panel-shard-img');
                 shardImg.style.display = 'block'; 
-                shardImg.src = 'styles/Shard.png'; 
+                shardImg.src = 'img/styles/Shard.png'; 
                 
                 document.getElementById('panel-crit').textContent = hero.CritImportance || '-';
 
