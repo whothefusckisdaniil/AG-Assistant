@@ -851,7 +851,7 @@
                     <div class="build-item">
                         <span>Hero Shard</span>
                         <div class="shard-wrapper">
-                            <img id="panel-shard-img" src="img/styles/Shard.png" alt="Shard" style="width: 24px; height: 24px; object-fit: contain;" onerror="this.style.display='none'">
+                            <img id="panel-shard-img" src="styles/Shard.png" alt="Shard" style="width: 24px; height: 24px; object-fit: contain;" onerror="this.style.display='none'">
                             <strong id="panel-shard">-</strong>
                         </div>
                     </div>
@@ -1155,7 +1155,7 @@ Enigma,2,2,2,Ult,Magic,Survival,"Good to have","4 - Not important",4.9`;
                     btn.onclick = () => this.toggleStyle(style, btn);
                     
                     btn.innerHTML = `
-                        <img src="img/styles/${style}.png" alt="${style}" class="style-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                        <img src="styles/${style}.png" alt="${style}" class="style-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
                         <span class="style-fallback-text" style="display:none;">${style}</span>
                     `;
                     grid.appendChild(btn);
@@ -1317,7 +1317,7 @@ Enigma,2,2,2,Ult,Magic,Survival,"Good to have","4 - Not important",4.9`;
                 const fallbackSrc = "data:image/svg+xml;charset=UTF-8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2280%22 height=%2280%22%3E%3Crect width=%2280%22 height=%2280%22 fill=%22%23333%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 fill=%22%23a0a0a0%22 text-anchor=%22middle%22 dominant-baseline=%22middle%22 font-size=%2224%22%3E?%3C/text%3E%3C/svg%3E";
 
                 top4.forEach(res => {
-                    const heroImgSrc = `img/heroes/${res.heroData.Hero}.png`;
+                    const heroImgSrc = `heroes/${res.heroData.Hero}.png`;
                     container.innerHTML += `
                         <div class="ban-card" onclick="app.openPanel(${res.heroIndex})">
                             <img src="${heroImgSrc}" alt="${res.heroData.Hero}" class="hero-avatar" onerror="this.src='${fallbackSrc}'">
@@ -1363,9 +1363,9 @@ Enigma,2,2,2,Ult,Magic,Survival,"Good to have","4 - Not important",4.9`;
                         `;
                     } else {
                         const res = this.allCalculatedResults.find(r => r.heroData.Hero === heroData.Hero);
-                        const heroImgSrc = `img/heroes/${res.heroData.Hero}.png`;
+                        const heroImgSrc = `heroes/${res.heroData.Hero}.png`;
                         const matchedIconsHtml = res.uniqueMatches.map(style => 
-                            `<img src="img/styles/${style}.png" alt="${style}" title="${style}" class="card-matched-icon" onerror="this.style.display='none';">`
+                            `<img src="styles/${style}.png" alt="${style}" title="${style}" class="card-matched-icon" onerror="this.style.display='none';">`
                         ).join('');
 
                         // Логика "BEST" бейджа (Золотая рамка только у лучшего)
@@ -1457,7 +1457,7 @@ Enigma,2,2,2,Ult,Magic,Survival,"Good to have","4 - Not important",4.9`;
                     item.onclick = () => this.selectHeroForSlot(res.heroIndex);
                     
                     item.innerHTML = `
-                        <img src="img/heroes/${res.heroData.Hero}.png" alt="Hero" onerror="this.src='${fallbackSrc}'">
+                        <img src="heroes/${res.heroData.Hero}.png" alt="Hero" onerror="this.src='${fallbackSrc}'">
                         <div class="hero-details">
                             <strong>${res.heroData.Hero}</strong>
                             <span>Power: ★ ${res.power.toFixed(1)} | Совпадение: ${Math.round(res.matchPercent)}%</span>
@@ -1544,9 +1544,9 @@ Enigma,2,2,2,Ult,Magic,Survival,"Good to have","4 - Not important",4.9`;
                     const card = document.createElement('div');
                     card.className = 'hero-card';
                     
-                    const heroImgSrc = `img/heroes/${res.heroData.Hero}.png`;
+                    const heroImgSrc = `heroes/${res.heroData.Hero}.png`;
                     const matchedIconsHtml = res.uniqueMatches.map(style => 
-                        `<img src="img/styles/${style}.png" alt="${style}" title="${style}" class="card-matched-icon" onerror="this.style.display='none';">`
+                        `<img src="styles/${style}.png" alt="${style}" title="${style}" class="card-matched-icon" onerror="this.style.display='none';">`
                     ).join('');
 
                     const cColor = res.counterScore > 0 ? 'highlight-green' : (res.counterScore < 0 ? 'highlight-red' : '');
@@ -1613,7 +1613,7 @@ Enigma,2,2,2,Ult,Magic,Survival,"Good to have","4 - Not important",4.9`;
                 styles.forEach(style => {
                     html += `
                         <div class="modal-style-icon" title="${style}">
-                            <img src="img/styles/${style}.png" alt="${style}" onerror="this.style.display='none';">
+                            <img src="styles/${style}.png" alt="${style}" onerror="this.style.display='none';">
                             <span>${style}</span>
                         </div>
                     `;
@@ -1628,7 +1628,7 @@ Enigma,2,2,2,Ult,Magic,Survival,"Good to have","4 - Not important",4.9`;
 
                 const fallbackSrc = "data:image/svg+xml;charset=UTF-8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22100%22 height=%22100%22%3E%3Crect width=%22100%22 height=%22100%22 fill=%22%23000%22 stroke=%22%230a84ff%22 stroke-width=%222%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 fill=%22%230a84ff%22 text-anchor=%22middle%22 dominant-baseline=%22middle%22 font-size=%2240%22%3E?%3C/text%3E%3C/svg%3E";
                 
-                const imgSrc = `img/heroes/${hero.Hero}.png`;
+                const imgSrc = `heroes/${hero.Hero}.png`;
                 
                 const imgElement = document.getElementById('panel-hero-img');
                 imgElement.src = imgSrc;
@@ -1651,7 +1651,7 @@ Enigma,2,2,2,Ult,Magic,Survival,"Good to have","4 - Not important",4.9`;
                 document.getElementById('panel-shard').textContent = hero.HeroShard || '-';
                 const shardImg = document.getElementById('panel-shard-img');
                 shardImg.style.display = 'block'; 
-                shardImg.src = 'img/styles/Shard.png'; 
+                shardImg.src = 'styles/Shard.png'; 
                 
                 document.getElementById('panel-crit').textContent = hero.CritImportance || '-';
 
