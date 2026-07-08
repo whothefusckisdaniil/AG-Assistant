@@ -195,7 +195,7 @@ Witch Doctor,2,1,2,Regen,Shield,Dice,"No need","6 - no need",3.5
 YAMASHITA,1,1,1,Health,Fury,Survival,"Situational","2 - important, but not manablast",
 YAMASHITA,1,2,2,Ult,Fury,Survival,"Situational","2 - important, but not manablast",
 YAMASHITA,2,2,2,Attack,Fury,Survival,"Situational","2 - important, but not manablast",
-YAMASHITA,2,1,1,Futy,Evade/crit,Dice,"Situational","1 - important, and manablast too",2
+YAMASHITA,2,1,1,Fury,Evade/Crit,Dice,"Situational","1 - important, and manablast too",2
 Zeus,1,1,1,Attack,Survival,Dice,"Buy on late game","3 - only manablast",
 Zeus,2,"1(situational 2)",2,Ult,Survival,Dice,"Buy on late game","3 - only manablast",
 Zeus,2,2,2,Ult,Evade/Crit,Dice,"No need","1 - important, and manablast too",3
