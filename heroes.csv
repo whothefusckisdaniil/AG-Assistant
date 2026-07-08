@@ -36,6 +36,7 @@ Dazzle,1,1,1,Spirits,Injure,Survival,"Good","6 - no need",3
 Dazzle,1,1,1,Health/Evade,Injure/Dice,Survival,"Good","6 - no need",4
 DOOM,"1(situational 2)",2,2,Health,Chaos,Survival/Dice,"Buy on late game","6 - no need",4
 DOOM,1,1,1,Ult,Health/Regen/Evade,Chaos,"Buy on late game","6 - no need",2
+DOOM,1,1,1,Ult,Chaos/Health,Dice,"Buy on late game","6 - no need",3.5
 Dragon Knight,1,1,2,Health,Poison,Crit/Survival,"Good","2 - important, but not manablast",3
 Dragon Knight,1,2,1,Fury,Frost,Health,"Musthave","1 - important, and manablast too",3
 Dragon Knight,1,2,2,Frost,Dice,Survival,"Good","1 - important, and manablast too",3
@@ -91,6 +92,7 @@ Lone Druid,1,1,2,Spirits,Health/Dice,Survival/Dice,"No need","4 - not important,
 Lone Druid,2,1,1,Spirits,Ult,Survival/Dice,"No need",,2.5
 Luna,1,1,1,Attack,Dice,Survival,"Musthave","2 - important, but not manablast",
 Luna,2,2,2,Attack,Crit,Survival,"Situational","2 - important, but not manablast",
+Luna,1,1,2,Spirits,Poison/Injure,Dice,"Good","2 - important, but not manablast",2.5
 Lycan,1,1,1,Spirits,Attack,Dice/Survival,"Good","1 - important, and manablast too",
 Lycan,"1(situational 2)",2,2,Spirits,Ult,Dice/Survival,"Situational","1 - important, and manablast too",
 Lycan,2,2,2,Attack,Ult,Dice/Survival,,,
@@ -155,6 +157,7 @@ Templar Assassin,2,1,1,Attack,Crit/Shield,Survival,"Situational","2 - important,
 Templar Assassin,1,1,2,Shield,Crit/Procs,Survival,"Situational","1 - important, and manablast too",
 Templar Assassin,"1 (2 optional if hp in pool)",2,2,Evade,Shield,Survival,"Situational","2 - important, but not manablast",
 Templar Assassin,2,1,1,Attack,Ult,Survival/Crit,"Situational","2 - important, but not manablast",
+Templar Assassin,1,1,2,Evade/Shield,Injure,Dice,"No need","2 - important, but not manablast",2.5
 Terrorblade,1,2,1,Attack,Crit/Dice,Survival,"Musthave","2 - important, but not manablast",3
 Terrorblade,2,"1(situational 2)",2,Health,Attack/Dice,Survival,"Musthave","2 - important, but not manablast",2.5
 Timbersaw,1,1,1,Chaos,Health,Survival/Dice,"Situational","6 - no need",
@@ -163,6 +166,7 @@ Tinker,Situational,2,2,Health,Dice,Dice,"Situational","3 - only manablast",3
 Tinker,1,2,2,Regen,Evade,Dice,"Situational","3 - only manablast",3
 Tinker,1,1,1,Ult,Crit,Survival,"Situational","3 - only manablast",2.5
 Tinker,Situational,2,2,Spirits,Dice,Dice,"Situational","3 - only manablast",3
+Tinker,2,2,2,Health,Dice,Dice,"Situational","3 - only manablast",3
 Tiny,1,1,1,Attack,Health,Dice/Survival,"Situational","2 - important, but not manablast",3.5
 Tiny,2,2,2,Health,Crit/Dice,Survival,"Good","2 - important, but not manablast",4.5
 Troll Warlord,1,2,2,Health,Frost,Survival,"Good","3 - only manablast",4
@@ -187,10 +191,13 @@ Windranger,1,1,1,Evade,Regen/Dice,Survival,"No need","3 - only manablast",2.5
 Windranger,1,1,2,Attack,Evade/Crit,Survival,"Musthave","2 - important, but not manablast",3.5
 Witch Doctor,1,1,1,Regen/Injure,Health,Evade,"Musthave","6 - no need",
 Witch Doctor,2,2,1,Spirits,Injure,Regen,"Musthave","6 - no need",
+Witch Doctor,2,1,2,Regen,Shield,Dice,"No need","6 - no need",3.5
 YAMASHITA,1,1,1,Health,Fury,Survival,"Situational","2 - important, but not manablast",
 YAMASHITA,1,2,2,Ult,Fury,Survival,"Situational","2 - important, but not manablast",
 YAMASHITA,2,2,2,Attack,Fury,Survival,"Situational","2 - important, but not manablast",
+YAMASHITA,2,1,1,Futy,Evade/crit,Dice,"Situational","1 - important, and manablast too",2
 Zeus,1,1,1,Attack,Survival,Dice,"Buy on late game","3 - only manablast",
 Zeus,2,"1(situational 2)",2,Ult,Survival,Dice,"Buy on late game","3 - only manablast",
+Zeus,2,2,2,Ult,Evade/Crit,Dice,"No need","1 - important, and manablast too",3
 Zombie Guitarist,1,1,2,Health,Dice/Poison/Injure,Survival/Dice,"Good","4 - not important, may need a manablast",
 Zombie Guitarist,1,1,Situational,Ult,Survival,Dice,"Good","4 - not important, may need a manablast",
