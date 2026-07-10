@@ -127,6 +127,7 @@ Phantom Lancer,2,1,1,Attack,Spirits,Survival/Dice,"Buy on late game","4 - not im
 Phantom Lancer,2,2,2,Attack,Poison/Chaos/Injure/Dice,Survival,"Buy on late game","4 - not important, may need a manablast",
 Primal Beast,"1(2 situational)",2,1,Health,Dice,Dice,"Musthave",,
 Primal Beast,1,1,1,Health,Ult,Dice,"Musthave",,
+Primal Beast,2,2,1,Health,Chaos,Dice,"Good",,5
 Pudge,2,2,2,Health,Poison/Dice,Dice/Dice,"Situational","6 - no need",
 Pudge,1,2,2,Ult,Health,Survival,"Situational","6 - no need",3.5
 Pugna,Situational,2,2,Spirits,Regen,Chaos/Injure/Poison/Dice,"Situational","6 - no need",3
@@ -151,6 +152,7 @@ Skywrath Mage,1,1,1,Ult,Regen,Survival/Evade,"Good","3 - only manablast",
 Sniper,1,1,1,Attack,Crit,Survival,"No need","2 - important, but not manablast",
 Sniper,1,"1(situational 2)",1,Health/Regen,Crit/Procs,Survival,"No need","1 - important, and manablast too",
 Sniper,2,2,2,Ult,Crit,Survival,"Situational","2 - important, but not manablast",
+Sniper,2,2,2,Ult,Crit,Dice,"Situational","2 - important, but not manablast",3
 Spectre,"2(buy a shard for 200)",1,1,Evade,Regen/Health/Injure,Dice,"Good","4 - not important, may need a manablast",4.5
 Spectre,"2(buy a shard for 200)",2,2,Evade,Ult,Crit/Dice/Procs,"Good","3 - only manablast",
 Templar Assassin,2,1,1,Attack,Crit/Shield,Survival,"Situational","2 - important, but not manablast",
@@ -160,6 +162,7 @@ Templar Assassin,2,1,1,Attack,Ult,Survival/Crit,"Situational","2 - important, bu
 Templar Assassin,1,1,2,Evade/Shield,Injure,Dice,"No need","2 - important, but not manablast",2.5
 Terrorblade,1,2,1,Attack,Crit/Dice,Survival,"Musthave","2 - important, but not manablast",3
 Terrorblade,2,"1(situational 2)",2,Health,Attack/Dice,Survival,"Musthave","2 - important, but not manablast",2.5
+Terrorblade,2,1,2,Attack,Health/Evade,Dice,"Good","2 - important, but not manablast",4.5
 Timbersaw,1,1,1,Chaos,Health,Survival/Dice,"Situational","6 - no need",
 Timbersaw,1,1,1,Chaos,Regen,Survival/Dice,"Situational","6 - no need",
 Tinker,Situational,2,2,Health,Dice,Dice,"Situational","3 - only manablast",3
@@ -176,8 +179,10 @@ Treant Protector,1,1,1,Spirits,Chaos/Injure/Poison/Dice,Survival,"Good","3 - onl
 Ursa,1,2,2,Attack,Health/Dice,Survival,"No need","Not important, manablast no need",5
 Ursa,1,2,2,Health,Dice,Dice,"No need","Not important, manablast no need",5
 Ursa,"1(situational  2)","1(situational 2)",1,Ult,Attack/Survival,,"Situational","Not important, manablast no need",3.5
-Kherpi,1,1,"1 (2 situational)",Regen,Health,Dice,"Situational","6 - no need",3.5
-Kherpi,1,1,"1 (2 situational)",Regen,Evade,Dice,"Situational","6 - no need",3.5
+Underlord,2,2,1,Chaos,Survival,Dice,"Situational","4 - not important, may need a manablast",3.5
+Kherpi,1,1,"1 (2 situational)",Regen,Health,Dice,"Situational","6 - no need",
+Kherpi,1,1,"1 (2 situational)",Regen,Evade,Dice,"Situational","6 - no need",
+Kherpi,1,1,1,Regen,Poison,Dice,"Situational","6 - no need",3.5
 Viper,1,1,1,Ult,Survival,Survival,"Situational","6 - no need",2.5
 Viper,2,2,2,Health,Poison,Dice,"Situational","6 - no need",4.5
 Void Spirit,1,1,"(buy a shard for 200)",Health,Injure,Shield/Dice,"Musthave","4 - not important, may need a manablast",4
