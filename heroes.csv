@@ -103,7 +103,7 @@ Marci,1,2,2,Attack,Ult,Survival,"Good","2 - important, but not manablast",
 Mirana,2,1,2,Spirits,Chaos/Injure/Poison/Dice,Survival,"Situational","4 - not important, may need a manablast",
 Mirana,2,2,1,Spirits,Ult,Survival/Dice,"Situational","1 - important, and manablast too",
 Mars,1,1,2,Shield,Dice/Survival,Attack,"Buy on late game","2 - important, but not manablast",
-Mars,1,2,1,Crit,Shield/Procs,Survival,"Buy on late game","2 - important, but not manablast",
+Mars,1,2,1,Shield,Injure/Crit,Dice,"Buy on late game","2 - important, but not manablast",4.5
 Monkey King,1,"1(2 optional)","2(1 optional)",Attack,Dice,Survival,"Situational","2 - important, but not manablast",4
 Monkey King,1,"1(2 optional)","2(1 optional)",Spirits,Attack/Poison,Survival/Dice,"Situational","2 - important, but not manablast",4.5
 Monkey King,1,1,1,Health,Dice,Survival/Dice,"Situational","1 - important, and manablast too",4
@@ -111,6 +111,7 @@ Muerta,"2(1 situational)",1,1,Attack,Ult,Survival,"Situational","4 - not importa
 Muerta,"2(1 situational)",1,1,Attack,Crit,Survival,"Situational","1 - important, and manablast too",
 Necrophos,1,1,Situational,Ult,Evade/Health,Survival/Dice,"Situational","4 - not important, may need a manablast",3
 Necrophos,2,2,2,Health/Regen,Poison/Injure,Dice,"Good","4 - not important, may need a manablast",2.5
+Necrophos,1,1,2,Health/Ult,Regen,Dice,"Situational","4 - not important, may need a manablast",4
 Nyx,1,1,1,Health,Injure,Dice,"Good","4 - not important, may need a manablast",4
 Nyx,2,2,2,Ult,Survival,Dice,"Buy on late game","3 - only manablast",3.5
 Nyx,1,1,1,Spirits,Injure,Dice,"Good","4 - not important, may need a manablast",3.5
