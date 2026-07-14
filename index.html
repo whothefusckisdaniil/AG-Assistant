@@ -10,7 +10,6 @@
         window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
     </script>
     <script src="/_vercel/insights/script.js"></script>
-</head>
     <style>
         /* =========================================
            CSS: APPLE GLASSMORPHISM (Light & Dark Elegance)
@@ -85,6 +84,22 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 0.5rem;
+        }
+
+        .logo-slot {
+            width: 48px;
+            height: 48px;
+            object-fit: contain;
+            border-radius: 12px;
+            filter: drop-shadow(0 4px 10px rgba(0,0,0,0.3));
         }
 
         /* Переключатель языка (стиль iOS Pill) */
@@ -285,26 +300,26 @@
             margin-bottom: 2rem;
             background: rgba(255, 59, 48, 0.03);
             border: 1px solid rgba(255, 59, 48, 0.15);
-            border-radius: 20px;
-            padding: 1.2rem; 
-            box-shadow: 0 10px 30px rgba(255, 59, 48, 0.05);
+            border-radius: 24px;
+            padding: 1.5rem; 
+            box-shadow: 0 10px 40px rgba(255, 59, 48, 0.05);
         }
 
         .banlist-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); 
-            gap: 12px;
+            grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); 
+            gap: 15px;
         }
 
         .ban-card {
             background: rgba(20, 10, 10, 0.6);
             border: 1px solid rgba(255, 59, 48, 0.3);
-            border-radius: 14px;
+            border-radius: 16px;
             display: flex;
             flex-direction: column;
             align-items: center;
             text-align: center;
-            padding: 0.8rem 0.6rem;
+            padding: 1rem 0.8rem;
             cursor: pointer;
             transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
         }
@@ -317,27 +332,27 @@
         }
 
         .ban-card .hero-avatar {
-            width: 48px; height: 48px;
+            width: 56px; height: 56px;
             border-radius: 50%;
             object-fit: cover;
             border: 2px solid rgba(255, 59, 48, 0.5);
-            box-shadow: 0 4px 10px rgba(255, 59, 48, 0.2);
-            margin-bottom: 0.6rem;
+            box-shadow: 0 4px 15px rgba(255, 59, 48, 0.2);
+            margin-bottom: 0.8rem;
         }
 
         .ban-card .hero-name {
-            font-size: 0.95rem;
+            font-size: 1rem;
             font-weight: 700;
             color: #fff;
-            margin-bottom: 0.4rem;
+            margin-bottom: 0.5rem;
         }
         
         .ban-card .hero-power {
             background: rgba(255, 59, 48, 0.15);
             color: #ff6b6b;
-            padding: 2px 6px;
-            border-radius: 6px;
-            font-size: 0.75rem;
+            padding: 3px 8px;
+            border-radius: 8px;
+            font-size: 0.8rem;
             font-weight: bold;
         }
 
@@ -346,14 +361,14 @@
 
         .slots-container {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); 
-            gap: 12px;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); 
+            gap: 15px;
         }
 
         .slot-card-empty {
-            min-height: 180px; 
+            min-height: 220px; 
             border: 2px dashed rgba(255,255,255,0.2);
-            border-radius: 16px;
+            border-radius: 20px;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -373,30 +388,30 @@
         }
 
         .slot-card-empty .plus-icon {
-            font-size: 2.5rem; margin-bottom: 8px; font-weight: 300;
+            font-size: 3rem; margin-bottom: 10px; font-weight: 300;
         }
 
         .slots-container .hero-card {
-            padding: 1rem;
-            gap: 0.8rem;
-            border-radius: 16px;
+            padding: 1.2rem;
+            gap: 1rem;
+            border-radius: 20px;
         }
         .slots-container .hero-avatar {
-            width: 44px; height: 44px;
+            width: 50px; height: 50px;
         }
         .slots-container .hero-name {
-            font-size: 1rem;
+            font-size: 1.1rem;
         }
         .slots-container .hero-stats {
-            padding: 0.6rem;
-            font-size: 0.8rem;
+            padding: 0.8rem;
+            font-size: 0.85rem;
         }
         .slots-container .card-matched-icon {
-            width: 18px; height: 18px;
+            width: 20px; height: 20px;
         }
         .slots-container .btn-card {
-            padding: 8px;
-            font-size: 0.8rem;
+            padding: 10px;
+            font-size: 0.85rem;
         }
 
         .best-badge {
@@ -709,16 +724,25 @@
             .side-panel { max-width: 100%; border-left: none; }
             .build-grid { grid-template-columns: 1fr; }
 
-            /* Форсируем отображение строго сверху вниз (в одну колонку) для мобильных устройств */
+            /* Горизонтальный скролл (карусель) для Бан-листа и Драфта на мобилках */
             .banlist-grid, .slots-container, .results-grid {
                 grid-template-columns: 1fr;
                 display: grid;
-                flex-wrap: wrap; /* Сбрасываем возможные конфликты */
+                flex-wrap: wrap; 
                 overflow-x: hidden;
             }
             
             .ban-card { flex: auto; }
             .slots-container > * { flex: auto; }
+
+            /* ФИКС ДЛЯ МОБИЛОК КЛАВИАТУРА И ОКНО ВЫБОРА */
+            .modal-overlay {
+                align-items: flex-start; /* Прижимаем окно к верху */
+                padding-top: 15px; 
+            }
+            .modal-content {
+                max-height: calc(100vh - 30px); /* Не дает списку уехать за клавиатуру */
+            }
         }
     </style>
 </head>
@@ -736,7 +760,10 @@
                 <span id="lang-ru" class="active">RU</span> / <span id="lang-en">EN</span>
             </div>
             
-            <h1>AG Assistant</h1>
+            <div class="logo-container">
+                <img src="img/logo.png" alt="Logo" class="logo-slot" onerror="this.src='data:image/svg+xml;charset=UTF-8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Crect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%230a84ff%22 fill-opacity=%220.2%22 stroke=%22%230a84ff%22 stroke-width=%225%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 fill=%22%230a84ff%22 font-family=%22monospace%22 font-size=%2240%22 font-weight=%22bold%22%3EAG%3C/text%3E%3C/svg%3E'">
+                <h1>AG Assistant</h1>
+            </div>
             <p class="subtitle" data-i18n="subtitle">Метавые билды в Auto Gladiators</p>
         </header>
 
@@ -857,7 +884,7 @@
                     <div class="build-item">
                         <span>Hero Shard</span>
                         <div class="shard-wrapper">
-                            <img id="panel-shard-img" src="styles/Shard.png" alt="Shard" style="width: 24px; height: 24px; object-fit: contain;" onerror="this.style.display='none'">
+                            <img id="panel-shard-img" src="img/styles/Shard.png" alt="Shard" style="width: 24px; height: 24px; object-fit: contain;" onerror="this.style.display='none'">
                             <strong id="panel-shard">-</strong>
                         </div>
                     </div>
@@ -877,10 +904,9 @@
          JAVASCRIPT: ЛОГИКА ПРИЛОЖЕНИЯ
          ========================================= -->
     <script>
-        // --- Динамичная Матрица для Боковой Панели ---
+        // --- Динамичная Хакерская Матрица для Боковой Панели ---
         function initPanelMatrix() {
             const canvas = document.getElementById('panel-matrix-canvas');
-            if (!canvas) return;
             const ctx = canvas.getContext('2d');
             
             let width, height, columns, drops;
@@ -888,8 +914,8 @@
             const chars = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ!@#$%^&*()_+-=[]{}|;:,.<>?'.split('');
 
             function resize() {
-                width = canvas.width = canvas.offsetWidth || window.innerWidth;
-                height = canvas.height = canvas.offsetHeight || window.innerHeight;
+                width = canvas.width = canvas.offsetWidth;
+                height = canvas.height = canvas.offsetHeight;
                 columns = Math.floor(width / fontSize);
                 drops = [];
                 for(let x = 0; x < columns; x++) {
@@ -1030,7 +1056,7 @@ Enigma,2,2,2,Ult,Magic,Survival,"Good to have","4 - Not important",4.9`;
                 "Spirits":  { "Attack": 6, "Chaos": -3, "Crit": -5, "Evade": 0, "Frost": -1, "Fury": 3, "Health": 0, "Injure": -6, "Poison": -7, "Regen": -1, "Shield": 0, "Spirits": 0, "Ult": -6, "Dice": 0, "Survival": 0, "Procs": 0 },
                 "Ult":      { "Attack": 2, "Chaos": -5, "Crit": -2, "Evade": 4, "Frost": -6, "Fury": 3, "Health": -5, "Injure": -2, "Poison": -2, "Regen": -5, "Shield": -3, "Spirits": 6, "Ult": 0, "Dice": 0, "Survival": 0, "Procs": 0 },
                 "Dice":     { "Attack": 0, "Chaos": 0, "Crit": 0, "Evade": 0, "Frost": 0, "Fury": 0, "Health": 0, "Injure": 0, "Poison": 0, "Regen": 0, "Shield": 0, "Spirits": 0, "Ult": 0, "Dice": 0, "Survival": 0, "Procs": 0 },
-                "Survival": { "Attack": 3, "Chaos": 1, "Crit": 3, "Evade": 0, "Frost": 0, "Fury": 1, "Health": 0, "Injure": 2, "Poison": 2, "Regen": 0, "Shield": 0, "Spirits": 1, "Ult": 3, "Dice": 0, "Survival": 0, "Procs": 0 },
+                "Survival": { "Attack": 0, "Chaos": 0, "Crit": 0, "Evade": 0, "Frost": 0, "Fury": 0, "Health": 0, "Injure": 0, "Poison": 0, "Regen": 0, "Shield": 0, "Spirits": 0, "Ult": 0, "Dice": 0, "Survival": 0, "Procs": 0 },
                 "Procs":    { "Attack": 0, "Chaos": 0, "Crit": 0, "Evade": 0, "Frost": 0, "Fury": 0, "Health": 0, "Injure": 0, "Poison": 0, "Regen": 0, "Shield": 0, "Spirits": 0, "Ult": 0, "Dice": 0, "Survival": 0, "Procs": 0 }
             },
             
@@ -1042,7 +1068,6 @@ Enigma,2,2,2,Ult,Magic,Survival,"Good to have","4 - Not important",4.9`;
                     csvText = await response.text();
                 } catch (error) {
                     console.warn("Файл heroes.csv не найден. Используем демо-базу.");
-                    this.showToast(translations[this.currentLang].toastDemo);
                     csvText = DEMO_CSV;
                 }
                 
@@ -1161,7 +1186,7 @@ Enigma,2,2,2,Ult,Magic,Survival,"Good to have","4 - Not important",4.9`;
                     btn.onclick = () => this.toggleStyle(style, btn);
                     
                     btn.innerHTML = `
-                        <img src="styles/${style}.png" alt="${style}" class="style-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                        <img src="img/styles/${style}.png" alt="${style}" class="style-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
                         <span class="style-fallback-text" style="display:none;">${style}</span>
                     `;
                     grid.appendChild(btn);
@@ -1323,7 +1348,7 @@ Enigma,2,2,2,Ult,Magic,Survival,"Good to have","4 - Not important",4.9`;
                 const fallbackSrc = "data:image/svg+xml;charset=UTF-8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2280%22 height=%2280%22%3E%3Crect width=%2280%22 height=%2280%22 fill=%22%23333%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 fill=%22%23a0a0a0%22 text-anchor=%22middle%22 dominant-baseline=%22middle%22 font-size=%2224%22%3E?%3C/text%3E%3C/svg%3E";
 
                 top4.forEach(res => {
-                    const heroImgSrc = `heroes/${res.heroData.Hero}.png`;
+                    const heroImgSrc = `img/heroes/${res.heroData.Hero}.png`;
                     container.innerHTML += `
                         <div class="ban-card" onclick="app.openPanel(${res.heroIndex})">
                             <img src="${heroImgSrc}" alt="${res.heroData.Hero}" class="hero-avatar" onerror="this.src='${fallbackSrc}'">
@@ -1369,9 +1394,9 @@ Enigma,2,2,2,Ult,Magic,Survival,"Good to have","4 - Not important",4.9`;
                         `;
                     } else {
                         const res = this.allCalculatedResults.find(r => r.heroData.Hero === heroData.Hero);
-                        const heroImgSrc = `heroes/${res.heroData.Hero}.png`;
+                        const heroImgSrc = `img/heroes/${res.heroData.Hero}.png`;
                         const matchedIconsHtml = res.uniqueMatches.map(style => 
-                            `<img src="styles/${style}.png" alt="${style}" title="${style}" class="card-matched-icon" onerror="this.style.display='none';">`
+                            `<img src="img/styles/${style}.png" alt="${style}" title="${style}" class="card-matched-icon" onerror="this.style.display='none';">`
                         ).join('');
 
                         // Логика "BEST" бейджа (Золотая рамка только у лучшего)
@@ -1425,10 +1450,19 @@ Enigma,2,2,2,Ult,Magic,Survival,"Good to have","4 - Not important",4.9`;
 
             openSelectModal(slotIndex) {
                 this.activeSlotIndex = slotIndex;
-                document.getElementById('hero-select-modal').classList.add('active');
-                document.getElementById('slot-hero-search').value = '';
+                const modal = document.getElementById('hero-select-modal');
+                const searchInput = document.getElementById('slot-hero-search');
+                
+                modal.classList.add('active');
+                searchInput.value = '';
+                
                 // По умолчанию показываем только подходящих героев (чтобы не путать)
                 this.renderSelectModalList(this.allCalculatedResults.filter(r => r.baseScore > 0));
+
+                // Устанавливаем фокус на поле ввода после короткой задержки, чтобы на мобилках сразу вылезала клавиатура
+                setTimeout(() => {
+                    searchInput.focus();
+                }, 50);
             },
 
             closeSelectModal(event, force = false) {
@@ -1463,7 +1497,7 @@ Enigma,2,2,2,Ult,Magic,Survival,"Good to have","4 - Not important",4.9`;
                     item.onclick = () => this.selectHeroForSlot(res.heroIndex);
                     
                     item.innerHTML = `
-                        <img src="heroes/${res.heroData.Hero}.png" alt="Hero" onerror="this.src='${fallbackSrc}'">
+                        <img src="img/heroes/${res.heroData.Hero}.png" alt="Hero" onerror="this.src='${fallbackSrc}'">
                         <div class="hero-details">
                             <strong>${res.heroData.Hero}</strong>
                             <span>Power: ★ ${res.power.toFixed(1)} | Совпадение: ${Math.round(res.matchPercent)}%</span>
@@ -1550,9 +1584,9 @@ Enigma,2,2,2,Ult,Magic,Survival,"Good to have","4 - Not important",4.9`;
                     const card = document.createElement('div');
                     card.className = 'hero-card';
                     
-                    const heroImgSrc = `heroes/${res.heroData.Hero}.png`;
+                    const heroImgSrc = `img/heroes/${res.heroData.Hero}.png`;
                     const matchedIconsHtml = res.uniqueMatches.map(style => 
-                        `<img src="styles/${style}.png" alt="${style}" title="${style}" class="card-matched-icon" onerror="this.style.display='none';">`
+                        `<img src="img/styles/${style}.png" alt="${style}" title="${style}" class="card-matched-icon" onerror="this.style.display='none';">`
                     ).join('');
 
                     const cColor = res.counterScore > 0 ? 'highlight-green' : (res.counterScore < 0 ? 'highlight-red' : '');
@@ -1619,7 +1653,7 @@ Enigma,2,2,2,Ult,Magic,Survival,"Good to have","4 - Not important",4.9`;
                 styles.forEach(style => {
                     html += `
                         <div class="modal-style-icon" title="${style}">
-                            <img src="styles/${style}.png" alt="${style}" onerror="this.style.display='none';">
+                            <img src="img/styles/${style}.png" alt="${style}" onerror="this.style.display='none';">
                             <span>${style}</span>
                         </div>
                     `;
@@ -1634,7 +1668,7 @@ Enigma,2,2,2,Ult,Magic,Survival,"Good to have","4 - Not important",4.9`;
 
                 const fallbackSrc = "data:image/svg+xml;charset=UTF-8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22100%22 height=%22100%22%3E%3Crect width=%22100%22 height=%22100%22 fill=%22%23000%22 stroke=%22%230a84ff%22 stroke-width=%222%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 fill=%22%230a84ff%22 text-anchor=%22middle%22 dominant-baseline=%22middle%22 font-size=%2240%22%3E?%3C/text%3E%3C/svg%3E";
                 
-                const imgSrc = `heroes/${hero.Hero}.png`;
+                const imgSrc = `img/heroes/${hero.Hero}.png`;
                 
                 const imgElement = document.getElementById('panel-hero-img');
                 imgElement.src = imgSrc;
@@ -1657,7 +1691,7 @@ Enigma,2,2,2,Ult,Magic,Survival,"Good to have","4 - Not important",4.9`;
                 document.getElementById('panel-shard').textContent = hero.HeroShard || '-';
                 const shardImg = document.getElementById('panel-shard-img');
                 shardImg.style.display = 'block'; 
-                shardImg.src = 'styles/Shard.png'; 
+                shardImg.src = 'img/styles/Shard.png'; 
                 
                 document.getElementById('panel-crit').textContent = hero.CritImportance || '-';
 
