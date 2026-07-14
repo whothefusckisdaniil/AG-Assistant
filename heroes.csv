@@ -56,7 +56,7 @@ Flameborn,2,1,2,Chaos,Health,Survival/Dice,"Good","6 - no need",3.5
 Flameborn,1,1,2,Chaos,Attack,Survival/Dice,"Good","6 - no need",4
 Void,1,"1(2 ult in pool)","1(2 ult in pool)",Attack,Dice,Survival,"No need","1 - important, and manablast too",3.5
 Void,1,2,2,Ult,Evade,Survival,"No need","3 - only manablast",2
-Void,1,2,1,Attack,Ult,Dice,"No need","1 - important, and manablast too",5
+Void,1,2,1,Attack,Ult,Dice,"No need","1 - important, and manablast too",3.5
 Void,2,2,2,Ult,Evade,Dice,"No need","4 - not important, may need a manablast",3
 Grimstroke,1,1,1,Evade,Injure,Survival,"Situational","4 - not important, may need a manablast",3
 Grimstroke,2,2,"1(2situational)",Ult,Evade,Survival,"Situational","4 - not important, may need a manablast",3.5
