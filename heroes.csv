@@ -3,6 +3,7 @@ Alchemist,1,"1 (2 optional)","2 (1 optional)",Health,Dice,Survival,"No need","4 
 Alchemist,1,"1 (2 optional)","1 (2 optional)",Spirits,Dice,Survival,"No need","4 - not important, may need a manablast",4.5
 Alchemist,1,"1 (2 optional)","1 (2 optional)",Evade,Regen/Dice,Survival,"No need","3 - only manablast",4.5
 Alchemist,2,2,2,Ult,Dice,Survival,"No need","2 - important but not manablast",2
+Alchemist,2,2,1,Evade,Regen/Health,Dice,"No need","2 - important but not manablast",3
 Axe,2,1,1,Attack,Crit/Shield,Survival,"No need","2 - important but not manablast",3.5
 Axe,1,2,2,Shield,Regen/Health,Dice,"Situational","2 - important but not manablast",4.5
 Axe,2,2,2,Ult,Shield,Survival,"Situational","3 - only manablast",2
@@ -151,6 +152,7 @@ Silencer,1,1,1,Attack,Ult,Survival,"Buy on late game","4 - not important, may ne
 Silencer,2,2,1,Ult,Dice,Survival,"Buy on late game","4 - not important, may need a manablast",
 Shadow Fiend,2,2,2,Ult,Survival/Dice,Dice,"Situational","3 - only manablast",
 Shadow Fiend,1,1,1,Attack,Health/Crit/Dice,Survival,"Situational","1 - important, and manablast too",
+Shadow Fiend,1,1,2,Attack,Ult/Crit,Dice,"No need","1 - important, and manablast too",3.0
 Skywrath Mage,2,2,2,Regen,Crit/Dice/Procs,Survival/Evade,"Good","3 - only manablast",
 Skywrath Mage,1,1,1,Ult,Regen,Survival/Evade,"Good","3 - only manablast",
 Sniper,1,1,1,Attack,Crit,Survival,"No need","2 - important, but not manablast",
@@ -189,6 +191,7 @@ Kherpi,1,1,"1 (2 situational)",Regen,Evade,Dice,"Situational","6 - no need",
 Kherpi,1,1,1,Regen,Poison,Dice,"Situational","6 - no need",3.5
 Viper,1,1,1,Ult,Survival,Survival,"Situational","6 - no need",2.5
 Viper,2,2,2,Health,Poison,Dice,"Situational","6 - no need",4.5
+Viper,2,2,2,Spirits,Poison/Health,Dice,"Good","6 - no need",5
 Void Spirit,1,1,"(buy a shard for 200)",Health,Injure,Shield/Dice,"Musthave","4 - not important, may need a manablast",4
 Void Spirit,1,1,"(buy a shard for 200)",Evade,Injure,Shield/Dice,"Musthave","4 - not important, may need a manablast",4
 Void Spirit,1,1,"(buy a shard for 200)",Spirits,Injure,Shield/Dice,"Musthave","4 - not important, may need a manablast",4
@@ -208,5 +211,6 @@ YAMASHITA,2,1,1,Fury,Evade/Crit,Dice,"Situational","1 - important, and manablast
 Zeus,1,1,1,Attack,Survival,Dice,"Buy on late game","3 - only manablast",
 Zeus,2,"1(situational 2)",2,Ult,Survival,Dice,"Buy on late game","3 - only manablast",
 Zeus,2,2,2,Ult,Evade/Crit,Dice,"No need","1 - important, and manablast too",3
+Zeus,1,1,1,Attack,Evade/Regen,Dice,"No need","1 - important, and manablast too",5
 Zombie Guitarist,1,1,2,Health,Dice/Poison/Injure,Survival/Dice,"Good","4 - not important, may need a manablast",
 Zombie Guitarist,1,1,Situational,Ult,Survival,Dice,"Good","4 - not important, may need a manablast",
