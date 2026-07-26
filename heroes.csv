@@ -121,6 +121,7 @@ Ogre Magi,Situational,2,1,Attack,Crit,Survival,"Musthave","1 - important, and ma
 Omniknight,Situational,1,2,Regen,Health,Dice,"Buy on late game","6 - no need",
 Omniknight,1,1,1,Ult,Regen,Dice,"Buy on late game","6 - no need",
 Omniknight,Situational,1,2,Regen,Crit/Procs,Dice,"Buy on late game","1 - important, and manablast too",
+Omniknight,1,1,2,Regen,Health/Crit,Dice,"Buy on late game","1 - important, and manablast too",3.5
 Pangolier,2,2,2,Attack,Health/Dice,Survival,"Situational","2 - important, but not manablast",
 Pangolier,1,1,1,Ult,Attack,Survival/Dice,"Situational","2 - important, but not manablast",
 Phantom Assassin,"1(2 vs evade)",2,1,Attack,Crit,Survival,"Situational","2 - important, but not manablast",4.5
