@@ -15,6 +15,7 @@ Ancient Apparition,1,1,1,Health,Frost,Dice,"Buy on late game","3 - only manablas
 Ancient Apparition,2,2,2,Ult,Survival,Frost,"Buy on late game","3 - only manablast",3
 Awakened,"2(1 fast lvl 5)",1,1,Attack,Crit,Survival,"No need","2 - important, but not manablast",3.5
 Awakened,"2(1 fast lvl 5)",2,1,Attack,Ult,Survival,"No need","2 - important, but not manablast",4.5
+Awakened,1,2,1,Attack,Ult,Frost,"Buy on late game","2 - important, but not manablast",4.5
 Bristleback,1,1,1,Attack,Ult,Survival,"Buy on late game","2 - important, but not manablast",3
 Bristleback,2,2,2,Regen,Dice/Crit,Health,"Buy on late game","2 - important, but not manablast",4.5
 Bristleback,2,2,2,Ult,Regen/Crit,Survival,"Buy on late game","2 - important, but not manablast",3
@@ -48,6 +49,7 @@ Drow Ranger,1,1,1,Crit,Regen/Shield/Procs,Frost,"Situational","1 - important, an
 Earthshaker,2,Situational,Situational,Crit,Procs,Survival,"Buy on late game","1 - important, and manablast too",
 Earthshaker,1,1,1,Attack,Crit,Survival,"Buy on late game","2 - important, but not manablast",
 Earthshaker,1,2,2,Crit,Procs,Survival,"Buy on late game","1 - important, and manablast too",
+Earthshaker,2,2,2,Crit,Regen,Shield,"Situational","1 - important, and manablast too",4
 Ember Spirit,2,2,1,Crit,Procs,Fury/Survival,"Situational","1 - important, and manablast too",4
 Ember Spirit,1,1,1,Ult,Fury,Crit/Survival,"Good","1 - important, and manablast too",4
 Ember Spirit,2,2,2,Attack,Crit,Survival,"Situational","2 - important, but not manablast",4
@@ -77,6 +79,7 @@ Largo,1,"1(situational 2)",1,Regen,Crit,Dice,"Musthave","1 - important, and mana
 Largo,1,"1(situational 2)",1,Regen,Dice,Dice,"Musthave","4 - not important, may need a manablast",3.5
 Legion Commander,Situational,2,"2(1 ult in pool)",Crit,"Shield/Procs",Survival,"Situational","1 - important, and manablast too",4
 Legion Commander,2,2,1,Ult,Shield,Crit,"Situational","2 - important, but not manablast",4
+Legion Commander,1,2,2,Shield,Health,Crit,"Situational","2 - important, but not manablast",4
 Lich,1,1,1,Health,Frost,Dice,"Buy on late game","3 - only manablast",4
 Lich,1,1,1,Spirits,Frost,Survival/Crit/Dice,"Buy on late game","3 - only manablast",
 Lich,2,2,2,Ult,Frost,Survival,"Situational","3 - only manablast",
@@ -186,6 +189,7 @@ Ursa,1,2,2,Attack,Health/Dice,Survival,"No need","Not important, manablast no ne
 Ursa,1,2,2,Health,Dice,Dice,"No need","Not important, manablast no need",5
 Ursa,"1(situational  2)","1(situational 2)",1,Ult,Attack/Survival,,"Situational","Not important, manablast no need",3.5
 Underlord,2,2,1,Chaos,Survival,Dice,"Situational","4 - not important, may need a manablast",3.5
+Underlord,1,1,1,Evade,Chaos,Ult,"No need","4 - not important, may need a manablast",4.5
 Kherpi,1,1,"1 (2 situational)",Regen,Health,Dice,"Situational","6 - no need",
 Kherpi,1,1,"1 (2 situational)",Regen,Evade,Dice,"Situational","6 - no need",
 Kherpi,1,1,1,Regen,Poison,Dice,"Situational","6 - no need",3.5
